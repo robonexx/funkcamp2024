@@ -7,7 +7,7 @@ import { FiArrowDownCircle } from 'react-icons/fi'
 
 // images
 import Img1 from '/public/images/tony_judge_solo.png'
-import Img2 from '/public/images/mannyG.jpg'
+import Img2 from '/public/images/mannyg.jpg'
 import Img3 from '/public/images/willowparis.jpg'
 
 // styles
