@@ -44,7 +44,7 @@ export default function Home() {
         <Hero />
         <h2>Welcome to Funkcamp</h2>
         <p>We are happy that you want to share this experience with us!</p>
-        <h2 style={{margin: '2rem 0'}}>MAIN VENUE IS DANSCENTER FRYSHUSET</h2>
+        <h2 style={{margin: '2rem 0', color: '#ffa900'}}>MAIN VENUE IS DANSCENTER FRYSHUSET</h2>
         <p>We hope you visit will be a good one and that you will create memories that last</p>
         <p>We have an other opportunity to learn from a true pioneer so lets make the best of this weekend</p>
         <p>Read schedule further down for more info about changes and what is going on!</p>
