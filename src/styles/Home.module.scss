@@ -52,3 +52,27 @@
       width: 60%;
     }
 }
+
+.sponsors {
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &>h2 {
+    margin-top: 4rem;
+    font-size: clamp(2rem, 4vw, 6rem);
+  }
+
+  img {
+    margin: 3rem 0;
+    max-width: 200px;
+    height: auto;
+
+    &:first-child {
+      max-width: 300px;
+    }
+}
+}
