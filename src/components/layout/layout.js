@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import { useState, useEffect, useCallback } from 'react'
 import { useRouter } from 'next/router';
 import ScrollToTop from '@/utils/scrollToTop/ScrollToTop';
@@ -61,7 +62,9 @@ export default function Layout({ children }) {
         <ScrollToTop>
           <main>{children}</main>
         </ScrollToTop>
-        <Footer />
+      <Footer>
+      Funkcamp 2023 In association with <Link href="https://www.gatuverket.com/">GATUVERKET</Link> and <Link href="https://fryshuset.se/verksamhet/danscenter">DANSCENTER</Link>
+        </Footer>
     
     </>
   );

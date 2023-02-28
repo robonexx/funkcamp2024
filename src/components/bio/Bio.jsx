@@ -54,7 +54,9 @@ const Bio = () => {
       <ul>
         <li>- A little re-scedule</li>
         <li>10.00 - 11.15 warm-up workshop with Rob-One</li>
-        <li>12.00 Workshop with Tony Gogo at LAVA</li>
+        <li>12.00 Workshop with Tony Gogo at LAVA + session</li>
+        <li>13.00 - 15.00 Session / Jam at DanceSpot Stockholm</li>
+        <li>In association with Gatuverket</li>
         <li><Link rel="stylesheet" href="https://www.google.com/search?rlz=1C1BYYL_svSE957SE957&tbs=lf:1,lf_ui:4&tbm=lcl&sxsrf=AJOqlzXpH7fgBe5KQJ-g0ecPAdArq9VucA:1677588046862&q=lava+kulturhuset&rflfq=1&num=10&rldimm=9698059877802580866&ved=2ahUKEwil-_K8nrj9AhXXRfEDHTv0BsAQu9QIegQIGxAK#rlfi=hd:;si:6049330700982543529;mv:[[59.33311692937562,18.067333436924766],[59.33076380267133,18.06202266307528],null,[59.33194038639488,18.064678050000023],18]" target='_blank'>Adress link to Lava</Link></li>        
         <li>Adress: Lava, Sergels Torg, 111 57 Stockholm</li>
         <li>16.00-20.00 - Workshops continue for funkcamp</li>

@@ -1,9 +1,18 @@
 .footer {
+  padding: 0.5rem 0;
+    position: relative;
     width: 100%;
-    height: 6vh;
+    min-height: 8vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+
+    &>a {
+      padding: 0.5rem 2rem;
+      color: #ff6e40;
+      border: 1px solid #888;
+    }
 
     .border_bottom {
         position: absolute;
