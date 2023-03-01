@@ -46,6 +46,8 @@ export default function Home() {
           transition={{ duration: 0.4, delay: 0.6, ease: 'easeInOut' }}
         ></motion.div>
         <Hero />
+        <div className={styles.intro}>
+
         <h2 style={{marginTop: '2rem'}}>Welcome to Funkcamp</h2>
         <p>We are happy that you want to share this experience with us!</p>
         <h2 style={{ margin: '2rem 0', color: '#ffa900' }}>
@@ -65,47 +67,28 @@ export default function Home() {
         </p>
         <p>To contact us check contact page</p>
 
+        </div>
+        
         <div className={styles.sponsors}>
           <h2>In association with</h2>
+          <div className={styles.img}>
           <Image
             className={styles.img}
             src={S1}
             alt='gatuverket'
-            width='300px'
-            height='auto'
-            style={{
-              objectFit: 'cover',
-              objectPosition: 'center',
-              zIndex: '1',
-            }}
+            
+            fill
             priority
           />
+          </div>
           <Image
-            className={styles.img}
             src={S2}
             alt='danscenter'
             width='300px'
             height='auto'
-            style={{
-              objectFit: 'cover',
-              objectPosition: 'center',
-              zIndex: '1',
-            }}
             priority
           />
-          <Image
-            className={styles.img}
-            src={S3}
-            alt='åsa'
-            width='300px'
-            height='auto'
-            style={{
-              objectFit: 'cover',
-              objectPosition: 'center',
-              zIndex: '1',
-            }}
-            priority
-          />
+          <h2>The DanceSpot</h2>
         </div>
         <Video>
           {videoData.map(({ vid, vtime, id }) => (
