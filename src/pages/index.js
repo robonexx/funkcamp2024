@@ -47,8 +47,7 @@ export default function Home() {
         ></motion.div>
         <Hero />
         <div className={styles.intro}>
-
-        <h2 style={{marginTop: '2rem'}}>Welcome to Funkcamp</h2>
+        <h2 style={{marginTop: '5rem'}}>Welcome to Funkcamp</h2>
         <p>We are happy that you want to share this experience with us!</p>
         <h2 style={{ margin: '2rem 0', color: '#ffa900' }}>
           MAIN VENUE IS DANSCENTER FRYSHUSET
