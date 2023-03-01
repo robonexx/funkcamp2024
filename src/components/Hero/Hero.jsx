@@ -58,19 +58,6 @@ const Hero = () => {
           >
           Swedens first locking camp that brought the pioneers to share with european locking community
         </motion.p>
-          <motion.div
-          className={styles.readmore}
-          initial={{opacity: 0, width: 0,}}
-          animate={{
-            opacity: 1,
-            width: '12rem',
-           }}
-           transition={{duration: 0.4, delay: 2.4, ease: 'easeInOut'}}
-          >
-            <Link href="#bio" scroll={false}>
-            <FiArrowDownCircle className={styles.icon} />
-            </Link>
-          </motion.div>
     </div>
 
         <motion.div className={styles.img_1}
@@ -128,7 +115,19 @@ const Hero = () => {
           style={{objectFit: 'cover', objectPosition: 'top center', zIndex: '-1'}}
         />
         </motion.div>
-
+        <motion.div
+          className={styles.readmore}
+          initial={{opacity: 0, width: 0,}}
+          animate={{
+            opacity: 1,
+            width: '12rem',
+           }}
+           transition={{duration: 0.4, delay: 2.4, ease: 'easeInOut'}}
+          >
+            <Link href="#bio" scroll={false}>
+            <FiArrowDownCircle className={styles.icon} />
+            </Link>
+          </motion.div>
       </motion.div>
   )
 }
