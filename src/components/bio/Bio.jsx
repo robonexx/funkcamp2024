@@ -57,11 +57,11 @@ const Bio = () => {
       <ul>
         <li>- A little re-scedule</li>
         <li>10.00 - 11.15 warm-up workshop with Rob-One <br/> - At Danscenter</li>
-        <li>12.00 Workshop with Tony Gogo at LAVA + session <br/>- At Lava</li>
+        <li>12.00 Workshop with Tony Gogo at Studion Kulturhuset + session <br/>- At STUDION</li>
         <li>13.00 - 15.00 Session / Jam at DanceSpot Stockholm</li>
         <li>In association with Gatuverket</li>
-        <li><Link rel="stylesheet" href="https://www.google.com/search?rlz=1C1BYYL_svSE957SE957&tbs=lf:1,lf_ui:4&tbm=lcl&sxsrf=AJOqlzXpH7fgBe5KQJ-g0ecPAdArq9VucA:1677588046862&q=lava+kulturhuset&rflfq=1&num=10&rldimm=9698059877802580866&ved=2ahUKEwil-_K8nrj9AhXXRfEDHTv0BsAQu9QIegQIGxAK#rlfi=hd:;si:6049330700982543529;mv:[[59.33311692937562,18.067333436924766],[59.33076380267133,18.06202266307528],null,[59.33194038639488,18.064678050000023],18]" target='_blank'>Adress link to Lava</Link></li>        
-        <li>Adress: Lava, Sergels Torg, 111 57 Stockholm</li>
+        <li><Link rel="stylesheet" href="https://www.google.com/maps/place/Kulturhuset/@59.3320447,18.0627552,17z/data=!3m2!4b1!5s0x465f9d5e6495902d:0x64dca853c2bd10ec!4m6!3m5!1s0x465f9d5e7cf16e05:0x5068230272fbf543!8m2!3d59.332042!4d18.0649439!16s%2Fm%2F027_kvs" target='_blank'>Adress link to Kulturhuset/ studion</Link></li>        
+        <li>Adress: Studion, Sergels Torg, 111 57 Stockholm</li>
         <li>16.00-20.00 - Workshops continue for funkcamp <br/>- At Danscenter</li>
        <li>Teacher schedule coming up on friday</li>
       </ul>
