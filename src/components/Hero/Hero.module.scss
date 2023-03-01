@@ -87,20 +87,7 @@
     }
   }
   
-  .readmore {
-    position: absolute;
-    bottom: 1rem;
-    left: 50%;
-    transform: translate(-50%);
-    z-index: 100;
-    display: inline-block;
-    margin-top: 80px;
-    color: #b1b1b1;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding-bottom: 3px;
-    font-weight: bolder;
-  }
+ 
   
   .img_1 {
     position: absolute;
@@ -147,11 +134,26 @@
         top: 60vh;
        
     }
-  } 
+  }   
 
-  .icon {
+    .readmore {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      bottom: 0rem;
+      z-index: 100;
+      display: grid;
+      place-content: center;
+      color: #b1b1b1;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding-bottom: 3px;
+      font-weight: bolder;
+
+      .icon {
         position: relative;
         font-size: 3rem;
         color: #e3e3e3;
         z-index: 100;
+    }
     }
