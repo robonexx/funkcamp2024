@@ -23,6 +23,8 @@ const Bio = () => {
       />
       <div className={styles.adress}>
         <h2>MAIN VENUE!</h2>
+        <h2>DANSCENTER</h2>
+        <p>Fryshuset</p>
       <h4 style={{textAlign: 'left', marginTop: '4rem'}}>Adress for venue:</h4>
       <p>Mårtensdalsgatan 2-8
         <br />
