@@ -56,7 +56,7 @@ const Bio = () => {
       <h3>Saturday: Mixed Venues</h3>
       <ul>
         <li>- A little re-scedule</li>
-        <li>10.00 - 11.15 warm-up workshop with Rob-One <br/> - At Danscenter</li>
+        {/* <li>10.00 - 11.15 warm-up workshop with Rob-One <br/> - At Danscenter</li> */}
         <li>12.00 Workshop with Tony Gogo at Studion Kulturhuset + session <br/>- At STUDION</li>
         <li>13.00 - 15.00 Session / Jam at DanceSpot Stockholm</li>
         <li>In association with Gatuverket</li>
