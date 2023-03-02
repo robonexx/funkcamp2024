@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import IMGBIO from '/public/images/funkcamp_insta.jpg'
+import DANCE from '/public/images/thedancespot.png'
 
 // styles
 import styles from './Bio.module.scss'
@@ -11,15 +12,10 @@ const Bio = () => {
       <div className={styles.bio}>
       <h2>FUNKCAMP</h2>
       <h4>2023</h4>
-          <p>
-        A weekend of locking for the possionate lockers out there. 
-        <br />
-        Below you will find the schedule for the weekend. 
-        <br/>
-        This is for the people who booked there spot at funkcamp 2023. Enjoy the weekend
-        </p>
       <br />
       <Image src={IMGBIO} alt="funkcamp"
+        width={'100%'}
+        height={'auto'}
       />
       <div className={styles.adress}>
         <h2>MAIN VENUE!</h2>
@@ -72,6 +68,13 @@ const Bio = () => {
         <li>14.00-15.00 Lunch</li>
         <li>15.00-16.30 Workshops + day will end with a Q & A</li>
       </ul>
+
+      <h2>Saturday event</h2>
+      <br/><br/>
+      <Image src={DANCE} alt="dance spot"
+        width={'100%'}
+        height={'auto'}
+      />
     </div>
   )
 }
