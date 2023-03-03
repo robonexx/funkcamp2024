@@ -65,7 +65,7 @@ const Bio = () => {
       <ul>
         <li>11.00 - 12.30 Workshop</li>
         <li>12.30 - 14.00 Workshop</li>
-        <li>14.00-15.00 Lunch</li>
+        <li>14.00-15.00 Break</li>
         <li>15.00-16.30 Workshops + day will end with a Q & A</li>
       </ul>
 
