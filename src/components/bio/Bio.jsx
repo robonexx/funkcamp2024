@@ -12,6 +12,8 @@ const Bio = () => {
       <div className={styles.bio}>
       <h2>FUNKCAMP</h2>
       <h4>2023</h4>
+      <h4>ALERT!!</h4>
+      <h4>ALL TEACHERS HAS ARRIVED!</h4>
       <br />
       <Image src={IMGBIO} alt="funkcamp"
         width={'100%'}
