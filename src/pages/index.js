@@ -49,6 +49,10 @@ export default function Home() {
         <div className={styles.intro}>
           <h2 style={{ marginTop: '5rem' }}>Welcome to Funkcamp</h2>
           <p>We are happy that you want to share this experience with us!</p>
+
+          <div id='bio'>
+        <Bio />
+        </div>
           <h2 style={{ margin: '2rem 0', color: '#ffa900' }}>
             MAIN VENUE IS DANSCENTER FRYSHUSET
           </h2>
@@ -66,9 +70,7 @@ export default function Home() {
           </p>
           <p>To contact us check contact page</p>
         </div>
-        <div id='bio'>
-          <Bio />
-        </div>
+        
         <div className={styles.sponsors}>
           <h2>In association with</h2>
           <div className={styles.img}>
