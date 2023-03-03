@@ -21,8 +21,10 @@ const Bio = () => {
         <h2>MAIN VENUE!</h2>
         <h2>DANSCENTER</h2>
         <p>Fryshuset</p>
-        <h2>DANSSTUDIO 2 (2 floors down)</h2>
+        <h2>DANSSTUDIO 2</h2>
+        <p>2 floors down</p>
         <p>Also dance studio 5 on saturday and sunday</p>
+        <p>You can ask for help in reception also</p>
       <h4 style={{textAlign: 'left', marginTop: '4rem'}}>Adress for venue:</h4>
       <p>Mårtensdalsgatan 2-8
         <br />
