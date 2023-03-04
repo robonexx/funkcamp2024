@@ -12,8 +12,7 @@ const Bio = () => {
       <div className={styles.bio}>
       <h2>FUNKCAMP</h2>
       <h4>2023</h4>
-      <h4>ALERT!!</h4>
-      <h4>ALL TEACHERS HAS ARRIVED!</h4>
+
       <br />
       <Image src={IMGBIO} alt="funkcamp"
         width={'100%'}
@@ -53,8 +52,8 @@ const Bio = () => {
         <li>21.00 doors close</li>
         <li>Rest for saturday</li>
       </ul>
-      <p style={{color: 'lime'}}>Up next:</p>
-      <h3>Saturday: Mixed Venues</h3>
+      <h3 style={{ textDecoration: 'line-through' }}>Saturday: Mixed Venues</h3>
+      <p style={{color: 'tomato'}}>Done did with it</p>
       <ul>
         <li>- A little re-scedule</li>
         {/* <li>10.00 - 11.15 warm-up workshop with Rob-One <br/> - At Danscenter</li> */}
@@ -68,12 +67,14 @@ const Bio = () => {
         <li>16.30-20.00 - Workshops continue for funkcamp <br/>- At Danscenter</li>
        <li>Teacher schedule coming up on friday</li>
       </ul>
+      <p style={{color: 'lime'}}>Up next:</p>
       <h3>Sunday: At danscenter</h3>
       <ul>
-        <li>11.00 - 12.30 Workshop</li>
-        <li>12.30 - 14.00 Workshop</li>
-        <li>14.00-15.00 Break</li>
-        <li>15.00-16.30 Workshops + day will end with a Q & A</li>
+        <li>12.00 - 13.00 Manny</li>
+        <li>13.00 - 14.00 Willow</li>
+        <li>14.00-15.30 Break</li>
+        <li>15.30-16.30 Tony Gogo </li>
+        <li>16.30 Q & A</li>
       </ul>
     </div>
   )
