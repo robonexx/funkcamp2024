@@ -10,6 +10,7 @@ import { videoData } from '@/assets/data/pageData';
 import S1 from '/public/images/gatu.png';
 import S2 from '/public/images/dc.png';
 import S3 from '/public/images/asa.png';
+import DANCE from '/public/images/thedancespot.png'
 
 export default function Home() {
   return (
@@ -47,9 +48,21 @@ export default function Home() {
         ></motion.div>
         <Hero />
         <div className={styles.intro}>
+          <div>
+          <h2 style={{ margin: '5rem 0' }}>Saturday event</h2>
+            <Image
+              className={styles.img}
+              src={DANCE}
+              alt='event'
+              width={'100%'}
+              height={400}
+              priority
+            />
+            <p style={{marginTop: '2rem', textDecoration: 'underline'}}>classes continue at dance center from 16.30</p>
+            </div>
           <h2 style={{ marginTop: '5rem' }}>Welcome to Funkcamp</h2>
           <p>We are happy that you want to share this experience with us!</p>
-
+         
           <div id='bio'>
         <Bio />
         </div>

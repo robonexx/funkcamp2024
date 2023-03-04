@@ -25,8 +25,6 @@ const Bio = () => {
         <p>Fryshuset</p>
         <h2>DANSSTUDIO 2</h2>
         <p>2 floors down</p>
-        <p>Also dance studio 5 on saturday and sunday</p>
-        <p>You can ask for help in reception also</p>
       <h4 style={{textAlign: 'left', marginTop: '4rem'}}>Adress for venue:</h4>
       <p>Mårtensdalsgatan 2-8
         <br />
@@ -47,14 +45,15 @@ const Bio = () => {
         </p>
       </div>
       <br />
-      <h3>Friday: At Danscenter</h3>
+      <h3 style={{ textDecoration: 'line-through' }}>Friday: At Danscenter </h3>
+      <p style={{color: 'tomato'}}>Done did with it</p>
       <ul>
         <li>17.30 Welcome and registration - Danscenter</li>
         <li>18.00-21.00 workshops</li>
         <li>21.00 doors close</li>
         <li>Rest for saturday</li>
       </ul>
-      
+      <p style={{color: 'lime'}}>Up next:</p>
       <h3>Saturday: Mixed Venues</h3>
       <ul>
         <li>- A little re-scedule</li>
@@ -65,6 +64,7 @@ const Bio = () => {
         <li>and the DANCESPOT</li>
         <li><Link rel="stylesheet" href="https://www.google.com/maps/place/Kulturhuset/@59.3320447,18.0627552,17z/data=!3m2!4b1!5s0x465f9d5e6495902d:0x64dca853c2bd10ec!4m6!3m5!1s0x465f9d5e7cf16e05:0x5068230272fbf543!8m2!3d59.332042!4d18.0649439!16s%2Fm%2F027_kvs" target='_blank'>Adress link to Studion</Link></li>        
         <li>Adress: Studion, Sergels Torg, 111 57 Stockholm</li>
+        <li>15-16.30 BREAK - change of venue</li>
         <li>16.30-20.00 - Workshops continue for funkcamp <br/>- At Danscenter</li>
        <li>Teacher schedule coming up on friday</li>
       </ul>
@@ -75,13 +75,6 @@ const Bio = () => {
         <li>14.00-15.00 Break</li>
         <li>15.00-16.30 Workshops + day will end with a Q & A</li>
       </ul>
-
-      <h2>Saturday event</h2>
-      <br/><br/>
-      <Image src={DANCE} alt="dance spot"
-        width={'100%'}
-        height={'auto'}
-      />
     </div>
   )
 }

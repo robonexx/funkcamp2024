@@ -14,6 +14,11 @@ export const navData = [
     id: 2,
   },
   {
+    title: 'media',
+    path: '/media',
+    id: 3,
+  },
+  {
     title: 'contact',
     path: '/contact',
     id: 4,
