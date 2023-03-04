@@ -10,7 +10,6 @@ import { videoData } from '@/assets/data/pageData';
 import S1 from '/public/images/gatu.png';
 import S2 from '/public/images/dc.png';
 import S3 from '/public/images/asa.png';
-import DANCE from '/public/images/thedancespot.png'
 
 export default function Home() {
   return (
@@ -49,19 +48,18 @@ export default function Home() {
         <Hero />
         <div className={styles.intro}>
           <div>
-          <h2 style={{ margin: '5rem 0' }}>Saturday event</h2>
-            <Image
-              className={styles.img}
-              src={DANCE}
-              alt='event'
-              width={'100%'}
-              height={'320'}
-              priority
-            />
-            <p style={{marginTop: '2rem', textDecoration: 'underline'}}>classes continue at dance center from 16.30</p>
+          <h1 style={{ margin: '0rem 0 3rem', color: '#ffa900' }}>Sunday: Last day of funkcamp</h1>
+      <ul>
+        <li>12.00 - 13.00 Manny</li>
+        <li>13.00 - 14.00 Willow</li>
+        <li>14.00-15.30 Break</li>
+        <li>15.30-16.30 Tony Gogo </li>
+        <li>16.30 Q & A</li>
+      </ul>
             </div>
-          <h2 style={{ marginTop: '5rem' }}>Welcome to Funkcamp</h2>
-          <p>We are happy that you want to share this experience with us!</p>
+          <h2 style={{ marginTop: '5rem' }}>Thank you everyone </h2>
+          <p>We are happy that you have come to share your energy with us!</p>
+          <p>Without you guys, there would be no Funkcamp, So thank YOU!</p>
          
           <div id='bio'>
         <Bio />
