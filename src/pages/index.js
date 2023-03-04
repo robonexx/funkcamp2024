@@ -55,7 +55,7 @@ export default function Home() {
               src={DANCE}
               alt='event'
               width={'100%'}
-              height={400}
+              height={'320'}
               priority
             />
             <p style={{marginTop: '2rem', textDecoration: 'underline'}}>classes continue at dance center from 16.30</p>
