@@ -19,11 +19,10 @@ const Bio = () => {
         height={'auto'}
       />
       <div className={styles.adress}>
-        <h2>MAIN VENUE!</h2>
-        <h2>DANSCENTER</h2>
+        <h4>MAIN VENUE!</h4>
+        <h2 style={{ margin: '2rem 0', color: '#ffa900' }}>DANSCENTER</h2>
         <p>Fryshuset</p>
-        <h2>DANSSTUDIO 2</h2>
-        <p>2 floors down</p>
+        <p>DANSSTUDIO 2</p>
       <h4 style={{textAlign: 'left', marginTop: '4rem'}}>Adress for venue:</h4>
       <p>Mårtensdalsgatan 2-8
         <br />
@@ -37,11 +36,6 @@ const Bio = () => {
         <p>Travel in Stockholm please follow the link</p>
         <Link rel="stylesheet" href="https://sl.se/en/in-english" target='_blank'>SL - public transport in Stockholm.</Link>
         <br /><br />
-        <p>
-        For hotels please check bookings.com, hotels.com or airbnb
-        <br />
-        Remember to eat so you have energy and rest after class so you can keep going the hole camp
-        </p>
       </div>
       <br />
       <h3 style={{ textDecoration: 'line-through' }}>Friday: At Danscenter </h3>
@@ -67,8 +61,8 @@ const Bio = () => {
         <li>16.30-20.00 - Workshops continue for funkcamp <br/>- At Danscenter</li>
        <li>Teacher schedule coming up on friday</li>
       </ul>
-      <p style={{color: 'lime'}}>Up next:</p>
-      <h3>Sunday: At danscenter</h3>
+      <h3 style={{ textDecoration: 'line-through' }}>Sunday: At danscenter</h3>
+      <p style={{color: 'tomato'}}>Done did with it</p>
       <ul>
         <li>12.00 - 13.00 Manny</li>
         <li>13.00 - 14.00 Willow</li>

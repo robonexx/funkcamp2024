@@ -31,13 +31,6 @@ const Contact = () => {
        transition={{duration: 0.6, delay: 1, ease: 'easeOut'}}
       >
         <h3>funkcampswe@gmail.com</h3>
-        <h4>We will be at the venue to assist you</h4>
-        <p>Fri 17.30-20.45</p>
-        <p>Sun 11.30-19.45</p>
-        <p>Fri 11.00-16.45</p>
-
-        <h2>If its urgent</h2>
-        <h4>robertwagar@gmail.com</h4>
       </motion.div>
     </div>
   )
