@@ -7,7 +7,7 @@
   min-height: 100vh;
   
   z-index: 1;
-  font-family: SourceProLight;
+  font-family: inherit;
 
   @media(min-width: 768px) {
     margin-top: 0;
@@ -55,11 +55,13 @@
   
   .hero_title {
     position: relative;
-    font-family: SourceProBold;
+    font-family: inherit;
+    text-shadow: 1px 1px black, 10px 10px 10px rgba(0,0,0,.225);
     font-size: clamp(4rem, 6vw, 10rem);
     line-height: 1;
     text-transform: uppercase;
     width: 0%;
+    font-weight: 700;
     overflow: hidden;
     white-space: nowrap;
     z-index: 10;
@@ -77,14 +79,16 @@
     font-size: 0.6rem;
     letter-spacing: 1px;
     line-height: 1.2;
-    text-shadow: 1px 1px black;
-    z-index: 10;
+    text-shadow: 1px 1px black, 10px 10px 10px rgba(0,0,0,.225);
+    z-index: 100;
 
     @media(min-width: 768px) {
-        margin: 45svh auto 0;
+      max-width: 500px;
+        margin: 5svh 2rem 0 auto;
         width: 100%;
         font-size: 1rem;
-        color: rgba(168, 168, 168, 0.574);
+        color: rgba(255, 255, 255, 0.911);
+        text-shadow: 1px 1px rgb(0, 0, 0), 10px 10px 10px rgba(34, 34, 34, 0.225);
     }
   }
   
@@ -92,14 +96,15 @@
   
   .img_1 {
     position: absolute;
-    top: 37.5svh;
-    left: 50%;
+    top: 40.5svh;
+    left: 35%;
     transform: translateX(-50%);
     overflow: hidden;
-    object-position: top center;
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.534), 20px 20px 20px rgba(0, 0, 0, 0.171);
+    filter: grayscale(1);
 
     @media screen and (min-width: 768px) {
-        top: 35vh;
+        top: 45vh;
         object-fit: contain;
         
     }
@@ -109,30 +114,64 @@
   .img_2 {
     position: absolute;
     top: 70vh;
-    left: 0;
-    bottom: 0vh;
+    left: 15vw;
+    bottom: 2vh;
     overflow: hidden;
     margin-bottom: 30px;
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.534), 20px 20px 20px rgba(0, 0, 0, 0.171);
+    filter: grayscale(1);
 
     @media(min-width: 768px) {
         top: 10svh;
         left: 5svw;
         right: auto;
-    
     }
   }
   
   .img_3 {
     position: absolute;
-    top: 60vh;
-    right: 0vw;
+    top: 35vh;
+    left: 0vw;
     z-index: 10;
     bottom: auto;
     overflow: hidden;
+    box-shadow: -10px -10px 50px rgba(0, 0, 0, 0.534), 20px 20px 20px rgba(0, 0, 0, 0.171);
+    filter: grayscale(1);
 
     @media(min-width: 768px) {
-        right: -5rem;
+        right: 2rem;
+        left: auto;
         top: 60vh;
+       
+    }
+  }   
+
+  .img_4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    box-shadow: -10px -10px 50px rgba(0, 0, 0, 0.534), 20px 20px 20px rgba(0, 0, 0, 0.171);
+    filter: grayscale(1);
+
+  }   
+
+  .img_5 {
+    position: absolute;
+    top: 0vh;
+    left: 0vw;
+    z-index: 20;
+    bottom: auto;
+    overflow: hidden;
+    box-shadow: -10px -10px 50px rgba(0, 0, 0, 0.534), 20px 20px 20px rgba(0, 0, 0, 0.171);
+    filter: grayscale(1);
+    object-fit: cover;
+    object-position: center top;
+
+    @media(min-width: 768px) {
+        left: 2rem;
+        bottom: 10vh;
+        top: auto;
        
     }
   }   
@@ -147,16 +186,24 @@
       z-index: 100;
       display: grid;
       place-content: center;
-      color: #b1b1b1;
+      color: #eeecec;
       text-decoration: none;
       text-transform: uppercase;
       padding-bottom: 3px;
-      font-weight: bolder;
+      font-weight: 700;
 
       .icon {
-        position: relative;
+        position: absolute;
+        left: 35svw;
+        bottom: 10vh;
         font-size: 3rem;
         color: #e3e3e3;
         z-index: 100;
+
+        @media(min-width: 768px) {
+          right: 5rem;
+          top: 60vh;
+         
+      }
     }
     }

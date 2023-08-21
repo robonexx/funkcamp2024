@@ -1,12 +1,13 @@
 // colors client
-$color-client-1:#FDFDFD;
-$color-client-2: #ff6e40;
-$color-client-3: #282828;
+$color-1:#FDFDFD;
+$color-2: #fdda7d;
+$color-3: #324248;
+$color-4: #ced9bf;
 
 $color-black: #000;
 $color-white: #fff;
 
-$color-bg: #121212;
+$color-bg: #95999e;
 
 // dimmed
 $color-dimmed: #888;
@@ -20,9 +21,4 @@ $box-shadow: rgba(0,0,0,0.335);
 // cards
 $color-card-bg: #000;
 
-// svg colors
-$color-lockerlegends-yellow: #ffc13b;
-$color-lockerlegends-orange: #ff6e40;
-$color-lockerlegends-dodgers-blue: #005A9C;
-$color-lockerlegends-dodgers-red: #EF3E42;
-$color-lockerlegends-dodgers-gray: #A5ACAF;
+$txt-shadow: 1px 1px black, 10px 10px 10px rgba(0,0,0,.225);

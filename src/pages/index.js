@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Funkcamp 2023</title>
+        <title>Funkcamp 2024</title>
         <meta name='description' content='Official funkcamp webiste' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
@@ -48,22 +48,23 @@ export default function Home() {
         <Hero />
         <div className={styles.intro}>
           <h2 style={{ marginTop: '5rem' }}>Thank you everyone!</h2>
-          <p>We are happy that you came and shared with US. <br/>
-          Thanks to all of you we are able to do this,
-            I hope you felt the energy and vibe the same way we did. <br/>
-            It was a connection, and well needed after the past years where we have
-            been separated to not enjoy the energy shared between us humans.
-            We are made of energy and the energy this weekend did not lie.
-            Soulful, connecting with others and your innerself to be able to become
-            a better mover and feel what we actually are doing. 
+          <p>
+            We are happy that you came and shared with US in 2023. <br />
+            Thanks to all of you we are able to do this, I hope you felt the
+            energy and vibe the same way we did. <br />
+            It was a connection, and well needed after the past years where we
+            have been separated to not enjoy the energy shared between us
+            humans. We are made of energy and the energy this weekend did not
+            lie. Soulful, connecting with others and your innerself to be able
+            to become a better mover and feel what we actually are doing.
           </p>
-         
+
           <div id='bio'>
-        <Bio />
-        </div>
+            <Bio />
+          </div>
           <h4>To contact us check contact page</h4>
         </div>
-        
+
         <div className={styles.sponsors}>
           <h2>In association with</h2>
           <div className={styles.img}>

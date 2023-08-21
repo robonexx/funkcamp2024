@@ -1,10 +1,10 @@
 import '@/styles/globals.scss'
-import { Poppins } from 'next/font/google'
+import { Oxygen } from 'next/font/google'
 import Layout from '@/components/layout/layout'
 import { useState, useEffect } from 'react'
 
-const poppins = Poppins({
-  weight: ['400', '600', '800'],
+const oxygen = Oxygen({
+  weight: ['300', '400', '700'],
   style: ['normal'],
   subsets: ['latin']
 })
@@ -19,7 +19,7 @@ export default function App({ Component, pageProps }) {
     setActive(false); // Close the navigation panel
   }, [pathname]); */
   return (
-    <Layout className={poppins.className}>
+    <Layout className={oxygen.className}>
       <Component {...pageProps} />
     </Layout>
   

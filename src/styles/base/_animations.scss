@@ -1,0 +1,9 @@
+@mixin animate($animation, $duration, $timing, $count) {
+    animation: $animation, $duration, $timing, $count;
+}
+
+@mixin keyframes($name) {
+    @keyframes #{$name} {
+   @content;
+  }
+}
