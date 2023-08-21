@@ -37,9 +37,11 @@
 }
   
   .hero_subtitle {
+    position: relative;
     text-transform: uppercase;
     font-size: 0.8rem;
     letter-spacing: 2px;
+    z-index: 100;
   }
   
   .hero_subtitle::before {
@@ -96,16 +98,19 @@
   
   .img_1 {
     position: absolute;
-    top: 40.5svh;
-    left: 35%;
-    transform: translateX(-50%);
+    top: auto;
+    bottom: 0;
+    left: auto;
+    right: 0;
     overflow: hidden;
     box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.534), 20px 20px 20px rgba(0, 0, 0, 0.171);
     filter: grayscale(1);
 
     @media screen and (min-width: 768px) {
         top: 45vh;
+        left: 40vw;
         object-fit: contain;
+        transform: translate(-50%);
         
     }
   }
@@ -113,9 +118,9 @@
   
   .img_2 {
     position: absolute;
-    top: 70vh;
-    left: 15vw;
-    bottom: 2vh;
+    top: 0vh;
+    left: 0vw;
+    bottom: auto;
     overflow: hidden;
     margin-bottom: 30px;
     box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.534), 20px 20px 20px rgba(0, 0, 0, 0.171);
@@ -131,7 +136,7 @@
   .img_3 {
     position: absolute;
     top: 35vh;
-    left: 0vw;
+    left: -5vw;
     z-index: 10;
     bottom: auto;
     overflow: hidden;
@@ -158,10 +163,10 @@
 
   .img_5 {
     position: absolute;
-    top: 0vh;
-    left: 0vw;
+    top: auto;
+    left: 5vw;
     z-index: 20;
-    bottom: auto;
+    bottom: 0;
     overflow: hidden;
     box-shadow: -10px -10px 50px rgba(0, 0, 0, 0.534), 20px 20px 20px rgba(0, 0, 0, 0.171);
     filter: grayscale(1);

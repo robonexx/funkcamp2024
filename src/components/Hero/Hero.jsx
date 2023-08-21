@@ -101,8 +101,8 @@ const Hero = () => {
         initial={{ opacity: 0, width: 0 }}
         animate={{
           opacity: 1,
-          width: desktop ? '30vw' : '25vw',
-          height: desktop ? '40vh' : '40vh',
+          width: desktop ? '40vw' : '25vw',
+          height: desktop ? '50vh' : '40vh',
         }}
         transition={{ duration: 0.4, delay: 2.4, ease: 'easeInOut' }}
       >
@@ -124,8 +124,8 @@ const Hero = () => {
         initial={{ opacity: 0, width: 0 }}
         animate={{
           opacity: 1,
-          width: desktop ? '40vw' : '40vw',
-          height: desktop ? '20vh' : '40vh',
+          width: desktop ? '60vw' : '40vw',
+          height: desktop ? '30vh' : '40vh',
         }}
         transition={{ duration: 0.4, delay: 2.2, ease: 'easeInOut' }}
       >
@@ -157,7 +157,7 @@ const Hero = () => {
           src={Img4}
           alt='charlie'
           fill
-          style={{ objectFit: 'cover', objectPosition: 'center', zIndex: '-1' }}
+          style={{ objectFit: 'cover', objectPosition: desktop ? '60%' : 'center', zIndex: '-1' }}
         />
       </motion.div>
 
@@ -166,8 +166,8 @@ const Hero = () => {
         initial={{ opacity: 0, width: 0 }}
         animate={{
           opacity: 1,
-          width: desktop ? '20vw' : '30vw',
-          height: desktop ? '30vh' : '50vh',
+          width: desktop ? '40vw' : '30vw',
+          height: desktop ? '40vh' : '50vh',
         }}
         transition={{ duration: 0.4, delay: 2.2, ease: 'easeInOut' }}
       >
