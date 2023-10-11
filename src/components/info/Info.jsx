@@ -1,11 +1,11 @@
 import styles from './Info.module.scss';
-import Video from '../videoscomponent/Video';
+import Video from '@/components/videoscomponent/Video';
 import { videoData } from '@/assets/data/pageData';
 
 export const Info = () => {
   return (
-      <div className={styles.info}>
-          <Video>
+    <div className={styles.info}>
+      <Video>
         {videoData.map(({ vid, vtime, id, name }) => (
           <div key={id}>
             <h2>{name}</h2>
