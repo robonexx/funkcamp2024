@@ -2,7 +2,7 @@ import Video from '@/components/videoscomponent/Video';
 import { videoData } from '@/assets/data/pageData';
 import styles from './Info.module.scss';
 
-export const Info = () => {
+const Info = () => {
   return (
     <div className={styles.info}>
       <Video>
@@ -22,3 +22,5 @@ export const Info = () => {
     </div>
   );
 };
+
+export default Info;
