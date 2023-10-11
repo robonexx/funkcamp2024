@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
 // styles
-import styles from "./backdrop.module.scss";
+import "./Backdrop.scss";
 
 const Backdrop = ({ children, onClick }) => {
   return (
     <motion.div
-      className={styles.backdrop}
+      className="backdrop"
       onClick={onClick}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
