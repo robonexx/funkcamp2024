@@ -1,4 +1,4 @@
-import styles from './info.module.scss';
+import styles from './Info.module.scss';
 import Video from '../videoscomponent/Video';
 import { videoData } from '@/assets/data/pageData';
 

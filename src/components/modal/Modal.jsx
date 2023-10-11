@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import Backdrop from '@/backdrop/Backdrop';
-import styles from './modal.module.scss';
+import styles from './Modal.module.scss';
 
 const dropIn = {
   hidden: {

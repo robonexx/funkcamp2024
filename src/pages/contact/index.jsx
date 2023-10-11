@@ -6,7 +6,7 @@ import { FcCheckmark } from 'react-icons/fc';
 /* import Modal from '@/components/modal/Modal'; */
 
 // styles
-import styles from './contact.module.scss';
+import styles from './Contact.module.scss';
 
 /* const ModalContent = ({ name }) => {
   return (
@@ -32,11 +32,11 @@ const Contact = () => {
     message: '',
   });
   const [validationMessage, setValidationMessage] = useState('');
- /*  const [modalOpen, setModalOpen] = useState(false); */
+  /*  const [modalOpen, setModalOpen] = useState(false); */
 
   const router = useRouter();
 
- /*  const close = () => setModalOpen(false);
+  /*  const close = () => setModalOpen(false);
   const open = () => setModalOpen(true); */
   const form = useRef();
 
