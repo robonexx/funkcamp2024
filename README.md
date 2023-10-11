@@ -1,3 +1,3 @@
-# funkcamp 2023
+# funkcamp 2024
 
 new repo
