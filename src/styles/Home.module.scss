@@ -1,0 +1,96 @@
+.home {
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  }
+
+  .overlay {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    z-index: 1000;
+    background: #000;  
+  }
+  
+  .first {
+    height: 33.3vh;
+    position: absolute;    
+    top: 0;
+  }
+  
+  .second {
+    height: 33.3vh;
+    position: absolute;
+    top: 33.3vh;
+  }
+  
+  .third {
+    height: 33.3vh;
+    position: absolute;
+    top: 66.6vh;
+  }
+  
+
+
+
+  // video
+  .video {
+    margin: 1rem 0;
+    width: 90%;
+    height: 40vh;
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 60%;
+    }
+}
+
+.intro {
+  margin: 10rem auto 0;
+  width: 80%;
+
+  &>p {
+    margin: 0.5rem 0;
+    text-align: center;
+  }
+}
+
+.sponsors {
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &>h2 {
+    margin-top: 4rem;
+    font-size: clamp(2rem, 4vw, 6rem);
+
+    &>span {
+      font-size: clamp(1rem, 2vw, 2.5rem);
+    }
+  }
+
+  .img {
+    margin: 3rem auto;
+    position: relative;
+    width: 300px;
+    height: 50px;
+  }
+  
+  img {
+    margin: 3rem 0;
+    max-width: 200px;
+    height: auto;
+}
+}
