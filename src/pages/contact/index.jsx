@@ -206,7 +206,7 @@ const Contact = () => {
           name='submit'
           value='Submit'
           /* disabled={!isValid} */
-         /*  onClick={() => (modalOpen ? close() : open())} */
+          /*  onClick={() => (modalOpen ? close() : open())} */
         />
         <div className={styles.message}>{validationMessage}</div>
       </motion.form>
