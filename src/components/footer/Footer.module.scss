@@ -6,20 +6,26 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    color: #151515;
+
+    @media (min-width: 960px) {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
 
     &>a {
+      margin: 0.5rem;
       padding: 0.5rem 2rem;
       color: #ff6e40;
       border: 1px solid #888;
-    }
+      font-weight: bolder;
 
-    .border_bottom {
-        position: absolute;
-        top: 6vh;
-        width: 0%;
-        z-index: 1;
-        border-color: rgba(255,255,255, .2);
-        border-width: .5px;
-      }
+     &:hover {
+      transition: all 0.4s ease-in-out;
+      color: #e64312;
+      background:#020202;
+     }
+    }
 }

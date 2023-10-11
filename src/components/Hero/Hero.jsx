@@ -93,6 +93,7 @@ const Hero = () => {
             objectPosition: 'top center',
             zIndex: '-1',
           }}
+          priority
         />
       </motion.div>
 
@@ -116,6 +117,7 @@ const Hero = () => {
             objectPosition: 'top center',
             zIndex: '1',
           }}
+          priority
         />
       </motion.div>
 
@@ -139,6 +141,7 @@ const Hero = () => {
             objectPosition: 'top center',
             zIndex: '-1',
           }}
+          priority
         />
       </motion.div>
 
@@ -158,6 +161,7 @@ const Hero = () => {
           alt='charlie'
           fill
           style={{ objectFit: 'cover', objectPosition: desktop ? '60%' : 'center', zIndex: '-1' }}
+          priority
         />
       </motion.div>
 
@@ -181,6 +185,7 @@ const Hero = () => {
             objectPosition: 'center top',
             zIndex: '1',
           }}
+          priority
         />
       </motion.div>
 
