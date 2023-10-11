@@ -173,11 +173,11 @@ const Contact = () => {
             required
           /> */}
           <select
-            
             name='subject'
             value={form.subject}
             onChange={onChangeHandler}
-            required>
+            required
+          >
             <option value='Registration'>Register</option>
             <option value='Question'>Question</option>
           </select>
