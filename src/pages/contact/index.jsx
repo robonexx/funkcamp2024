@@ -3,12 +3,12 @@ import { useRouter } from 'next/router';
 import emailjs from '@emailjs/browser';
 import { motion } from 'framer-motion';
 import { FcCheckmark } from 'react-icons/fc';
-import Modal from '@/components/modal/Modal';
+/* import Modal from '@/components/modal/Modal'; */
 
 // styles
 import styles from './contact.module.scss';
 
-const ModalContent = ({ name }) => {
+/* const ModalContent = ({ name }) => {
   return (
     <div
       style={{
@@ -22,7 +22,7 @@ const ModalContent = ({ name }) => {
       <p style={{ color: 'white' }}>We will email you more info shortly</p>
     </div>
   );
-};
+}; */
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -32,12 +32,12 @@ const Contact = () => {
     message: '',
   });
   const [validationMessage, setValidationMessage] = useState('');
-  const [modalOpen, setModalOpen] = useState(false);
+ /*  const [modalOpen, setModalOpen] = useState(false); */
 
   const router = useRouter();
 
-  const close = () => setModalOpen(false);
-  const open = () => setModalOpen(true);
+ /*  const close = () => setModalOpen(false);
+  const open = () => setModalOpen(true); */
   const form = useRef();
 
   const onChangeHandler = (e) => {

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import Backdrop from '../backdrop/Backdrop';
+import Backdrop from '@/backdrop/Backdrop';
 import styles from './modal.module.scss';
 
 const dropIn = {
