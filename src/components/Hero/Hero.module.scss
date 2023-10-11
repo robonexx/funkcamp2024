@@ -1,7 +1,7 @@
 .hero {
   position: relative;
   margin-top: 0vh;
-  margin-bottom: 20vh;
+  margin-bottom: 10vh;
   padding: 4rem 0 0;
   width: 100%;
   min-height: 100vh;
@@ -11,6 +11,7 @@
 
   @media (min-width: 768px) {
     margin-top: 0;
+    margin-bottom: 20vh;
   }
 }
 

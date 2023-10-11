@@ -4,12 +4,8 @@ import Image from 'next/image';
 import styles from '@/styles/Home.module.scss';
 import Hero from '@/components/Hero/Hero';
 import Bio from '@/components/bio/Bio';
-import Video from '@/components/videoscomponent/Video';
-import { videoData } from '@/assets/data/pageData';
-
-import S1 from '/public/images/gatu.png';
 import S2 from '/public/images/dc.png';
-import S3 from '/public/images/asa.png';
+import { Info } from '@/components/info/Info';
 
 export default function Home() {
   return (
@@ -46,6 +42,7 @@ export default function Home() {
           transition={{ duration: 0.4, delay: 0.6, ease: 'easeInOut' }}
         ></motion.div>
         <Hero />
+        <Info />
         <div className={styles.intro}>
           <h2>Thank you everyone!</h2>
           <p>
@@ -83,21 +80,8 @@ export default function Home() {
             height='auto'
             priority
           />
-         {/*  <h2>The DanceSpot</h2> */}
+          {/*  <h2>The DanceSpot</h2> */}
         </div>
-        <Video>
-          {videoData.map(({ vid, vtime, id }) => (
-            <div key={id}>
-              <iframe
-                title='tony gogo'
-                className={styles.video}
-                type='text/html'
-                src={`https://www.youtube-nocookie.com/embed/${vid}?start=${vtime}`}
-                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full'
-              ></iframe>
-            </div>
-          ))}
-        </Video>
       </main>
     </>
   );

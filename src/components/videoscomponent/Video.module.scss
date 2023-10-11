@@ -1,15 +1,22 @@
 .video_wrapper {
-    margin-top: 10vh;
+    position: relative;
+    margin: 0 0 10rem;
+    padding-top: 10vh;
     width: 100vw;
     height: 100%;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     overflow: hidden;
+    border-top: 2px solid #888;
 
-    .video_inner {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        overflow-y: scroll;
+    h1 {
+        color: #533549;
+        padding: 2rem 0;
     }
+
+    @media screen and (min-width: 768px) {
+        padding-top: 20vh;
+      }
+
 }

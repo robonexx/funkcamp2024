@@ -90,15 +90,16 @@ font-size: 3.5rem;
 
   h2 {
     font-family: $font-base;
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: $color-1;
+    padding: 1rem 0;
 
     @media screen and (max-width: 960px) {
-      font-size: 1.5rem;
+      font-size: 1.75rem;
   }
 
   @media screen and (max-width: 40em) {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 }
 

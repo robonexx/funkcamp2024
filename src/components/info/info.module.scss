@@ -1,0 +1,38 @@
+.info {
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    background-color: black;
+    margin: 1rem auto;
+    width: 90%;
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 60%;
+    }
+  }
+
+  // video
+  .video {
+    margin: 1rem 0;
+    width: 90%;
+    height: 40vh;
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 60%;
+    }
+  }
+}
