@@ -5,7 +5,7 @@ import styles from '@/styles/Home.module.scss';
 import Hero from '@/components/Hero/Hero';
 import Bio from '@/components/bio/Bio';
 import S2 from '/public/images/dc.png';
-import { Info } from '@/components/info/Info';
+import Info from '@/components/info/Info';
 
 export default function Home() {
   return (
