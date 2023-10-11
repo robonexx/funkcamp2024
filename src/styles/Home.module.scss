@@ -1,3 +1,6 @@
+
+@use '../styles/base/' as *;
+
 .home {
   width: 100%;
   min-height: 100vh;
@@ -55,10 +58,11 @@
 }
 
 .intro {
-  margin: 10rem auto 0;
+  margin: 0rem auto 2rem;
   width: 80%;
 
   &>p {
+    color: $color-4;
     margin: 0.5rem 0;
     text-align: center;
   }
@@ -66,15 +70,16 @@
 
 .sponsors {
   width: 100%;
-  min-height: 80vh;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: $color-4;
 
   &>h2 {
-    margin-top: 4rem;
     font-size: clamp(2rem, 4vw, 6rem);
+    color: $color-2;
 
     &>span {
       font-size: clamp(1rem, 2vw, 2.5rem);
@@ -82,7 +87,7 @@
   }
 
   .img {
-    margin: 3rem auto;
+    margin: 1rem auto;
     position: relative;
     width: 300px;
     height: 50px;

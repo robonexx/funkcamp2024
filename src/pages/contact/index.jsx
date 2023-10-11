@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { useRouter } from 'next/router';
 import emailjs from '@emailjs/browser';
 import { motion } from 'framer-motion';
 import { FcCheckmark } from 'react-icons/fc';
@@ -33,6 +34,8 @@ const Contact = () => {
   const [validationMessage, setValidationMessage] = useState('');
   const [modalOpen, setModalOpen] = useState(false);
 
+  const router = useRouter();
+
   const close = () => setModalOpen(false);
   const open = () => setModalOpen(true);
   const form = useRef();
@@ -43,6 +46,16 @@ const Contact = () => {
     console.log(e.target.value);
   };
 
+  const resetForm = () => {
+    setFormData({
+      from_name: '',
+      from_email: '',
+      subject: '',
+      message: '',
+    });
+    form.current.reset();
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const isValid = form.current.checkValidity();
@@ -51,6 +64,10 @@ const Contact = () => {
       setValidationMessage(
         'Thanks you for getting in touch with funkcamp, we will answer you email shortly!'
       );
+      resetForm();
+      setTimeout(() => {
+        router.push('/');
+      }, 5000);
     } else {
       console.log('is not valid');
       setValidationMessage(
@@ -75,9 +92,9 @@ const Contact = () => {
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       setValidationMessage('');
-    }, 5000); // 5000 milliseconds = 5 seconds
+    }, 4000);
 
-    return () => clearTimeout(timeoutId); // Clear the timeout if the component is unmounted
+    return () => clearTimeout(timeoutId);
   }, [validationMessage]);
 
   return (

@@ -65,8 +65,8 @@ const Hero = () => {
           }}
           transition={{ duration: 1.2, delay: 2, ease: 'easeInOut' }}
         >
-          Swedens first locking camp that brought the pioneers to share with
-          european locking community
+          Swedens first locking camp, bringing the pioneers to share with
+          the locking community
         </motion.p>
       </div>
 

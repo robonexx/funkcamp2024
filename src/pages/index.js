@@ -47,7 +47,7 @@ export default function Home() {
         ></motion.div>
         <Hero />
         <div className={styles.intro}>
-          <h2 style={{ marginTop: '5rem' }}>Thank you everyone!</h2>
+          <h2>Thank you everyone!</h2>
           <p>
             We are happy that you came and shared with US in 2023. <br />
             Thanks to all of you we are able to do this, I hope you felt the
@@ -59,7 +59,7 @@ export default function Home() {
             to become a better mover and feel what we actually are doing.
           </p>
 
-          <div id='bio'>
+          <div className={styles.bio}>
             <Bio />
           </div>
           <h4>To contact us check contact page</h4>
@@ -68,13 +68,13 @@ export default function Home() {
         <div className={styles.sponsors}>
           <h2>In association with</h2>
           <div className={styles.img}>
-            <Image
+            {/* <Image
               className={styles.img}
               src={S1}
               alt='gatuverket'
               fill
               priority
-            />
+            /> */}
           </div>
           <Image
             src={S2}
@@ -83,7 +83,7 @@ export default function Home() {
             height='auto'
             priority
           />
-          <h2>The DanceSpot</h2>
+         {/*  <h2>The DanceSpot</h2> */}
         </div>
         <Video>
           {videoData.map(({ vid, vtime, id }) => (

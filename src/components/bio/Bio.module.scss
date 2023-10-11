@@ -1,3 +1,5 @@
+@use '../../styles/base/' as *;
+
 .bio {
         margin: 5vh auto 5vh;
         width: 90%;
@@ -13,14 +15,14 @@
         margin-top: 2rem;
         font-size: clamp(2rem, 5vw, 6rem);
         letter-spacing: 2px;
-        color: white;
+        color: $color-1;
       }
 
       
       h4 {
         margin-top: 1rem;
         font-size: clamp(1.4rem, 2vw, 3rem);
-        color: white;
+        color: $color-4;
         text-align: center;
         letter-spacing: 1px;
     }
