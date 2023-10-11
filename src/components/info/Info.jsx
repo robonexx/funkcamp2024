@@ -1,5 +1,6 @@
 import Video from '@/components/videoscomponent/Video';
 import { videoData } from '@/assets/data/pageData';
+import styles from './Info.module.scss';
 
 export const Info = () => {
   return (
