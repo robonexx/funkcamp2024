@@ -26,8 +26,8 @@ const ModalContent = ({ name }) => {
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    from_name: '',
-    from_email: '',
+    name: '',
+    email: '',
     subject: '',
     message: '',
   });
@@ -48,8 +48,8 @@ const Contact = () => {
 
   const resetForm = () => {
     setFormData({
-      from_name: '',
-      from_email: '',
+      name: '',
+      email: '',
       subject: '',
       message: '',
     });
@@ -61,6 +61,22 @@ const Contact = () => {
     const isValid = form.current.checkValidity();
     if (isValid) {
       console.log('is valid');
+      emailjs
+        .sendForm(
+          process.env.NEXT_PUBLIC_SENDER_ID,
+          process.env.NEXT_PUBLIC_TEMP_ID,
+          form.current,
+          process.env.NEXT_PUBLIC_KEY
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            form.current.reset();
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
       setValidationMessage(
         'Thanks you for getting in touch with funkcamp, we will answer you email shortly!'
       );
@@ -74,18 +90,10 @@ const Contact = () => {
         'Oops! My funky friend, It looks like you missed something. Please check and fill in all required fields.'
       );
     }
-
-    /* emailjs.sendForm(process.env.NEXT_PUBLIC_SENDER_ID, process.env.NEXT_PUBLIC_TEMP_ID, form.current, process.env.NEXT_PUBLIC_KEY)
-      .then((result) => {
-        console.log(result.text);
-        form.current.reset();
-      }, (error) => {
-          console.log(error.text);
-      }); */
   };
 
-  console.log(`name: ${formData.from_name} \n
-        email: ${formData.from_email}  \n
+  console.log(`name: ${formData.name} \n
+        email: ${formData.email}  \n
         subject: ${formData.subject} \n
         message: ${formData.message}`);
 
@@ -129,8 +137,8 @@ const Contact = () => {
         <div className={styles.input_field}>
           <input
             type='text'
-            name='from_name'
-            /* value={form.from_name || ''} */
+            name='name'
+            value={form.name}
             onChange={onChangeHandler}
             required
             minLength={3}
@@ -144,8 +152,8 @@ const Contact = () => {
         <div className={styles.input_field}>
           <input
             type='email'
-            name='from_email'
-            /* value={form.from_email || ''} */
+            name='email'
+            value={form.email}
             onChange={onChangeHandler}
             required
           />
@@ -164,7 +172,12 @@ const Contact = () => {
             maxLength={30}
             required
           /> */}
-          <select value={form.subject} onChange={onChangeHandler} required>
+          <select
+            
+            name='subject'
+            value={form.subject}
+            onChange={onChangeHandler}
+            required>
             <option value='Registration'>Register</option>
             <option value='Question'>Question</option>
           </select>
@@ -177,7 +190,7 @@ const Contact = () => {
           <textarea
             type='textarea'
             name='message'
-            /*  value={form.message || ''} */
+            value={form.message}
             onChange={onChangeHandler}
             minLength={20}
             maxLength={200}
