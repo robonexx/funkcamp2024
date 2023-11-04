@@ -1,15 +1,13 @@
-import './bio.scss';
-import TextReveal from '../reveal/TextReveal';
+import styles from './bio.module.scss';
+import TextReveal from '@/components/reveal/TextReveal';
 
 const Bio = ({ title, subtitle, desc }) => {
-  
-
   if (!title || !subtitle || !desc) {
     // If data is not available yet, return null or a loading indicator
     return null;
   }
   return (
-    <div className='bio'>
+    <div className={`${styles.bio}`}>
       <TextReveal>
         <h1>{title}</h1>
       </TextReveal>
@@ -17,9 +15,7 @@ const Bio = ({ title, subtitle, desc }) => {
         <h2>{subtitle}</h2>
       </TextReveal>
       <TextReveal>
-        <p>
-          {desc}
-        </p>
+        <p>{desc}</p>
       </TextReveal>
     </div>
   );

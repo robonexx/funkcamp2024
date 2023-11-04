@@ -1,10 +1,13 @@
 import React, { useEffect, useRef } from 'react';
 import { motion, useInView, useAnimation } from 'framer-motion';
-import './reveal.scss';
+import styles from './reveal.module.scss'
 
 const TextReveal = ({ children }) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "0px 100px -50px 0px" });
+  const isInView = useInView(ref, {
+    once: true,
+    margin: '0px 100px -50px 0px',
+  });
 
   // use to contol animation
   const mainControls = useAnimation();
@@ -20,7 +23,7 @@ const TextReveal = ({ children }) => {
   }, [isInView, slideControls, mainControls]);
 
   return (
-    <div className='reveal' ref={ref}>
+    <div className={`${styles['reveal']}`} ref={ref}>
       <motion.div
         variants={{
           hidden: { opacity: 0, x: 0 },
@@ -33,7 +36,7 @@ const TextReveal = ({ children }) => {
         {children}
       </motion.div>
       <motion.div
-        className='effect'
+        className={`${styles['effect']}`}
         variants={{
           hidden: { left: 0, opacity: 1 },
           visible: { left: '100%', opacity: 0 },
@@ -41,7 +44,7 @@ const TextReveal = ({ children }) => {
         initial='hidden'
         animate={slideControls}
         // can play with delay for different timing
-        transition={{ duration: 0.6, delay: .3, ease: 'easeOut' }}
+        transition={{ duration: 0.6, delay: 0.3, ease: 'easeOut' }}
       ></motion.div>
     </div>
   );

@@ -8,6 +8,7 @@ import S2 from '/public/images/dc.png';
 import Videos from '@/components/videowrapper/VideoWrapper';
 
 export default function Home() {
+
   return (
     <>
       <Head>

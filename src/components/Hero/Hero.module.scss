@@ -135,6 +135,14 @@
     filter: grayscale(0.25);
     cursor: pointer;
   }
+  > a {
+    position: absolute;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .img_2 {
@@ -150,13 +158,22 @@
 
   @media (min-width: 768px) {
     top: 10svh;
-    left: 5svw;
+    left: 5vw;
     right: auto;
   }
 
   &:hover {
     filter: grayscale(0.25);
     cursor: pointer;
+  }
+
+  > a {
+    position: absolute;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -181,6 +198,14 @@
     filter: grayscale(0.25);
     cursor: pointer;
   }
+  > a {
+    position: absolute;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .img_4 {
@@ -195,6 +220,14 @@
   &:hover {
     filter: grayscale(0.25);
     cursor: pointer;
+  }
+  > a {
+    position: absolute;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -220,6 +253,14 @@
   &:hover {
     filter: grayscale(0.25);
     cursor: pointer;
+  }
+  > a {
+    position: absolute;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 }
 

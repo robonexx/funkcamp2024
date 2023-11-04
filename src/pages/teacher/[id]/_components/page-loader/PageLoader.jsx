@@ -1,7 +1,8 @@
 import { motion, useAnimation } from 'framer-motion';
 import React, { useEffect } from 'react';
 
-import './pageloader.scss';
+import styles from './pageloader.module.scss';
+import { teacherData } from '@/assets/data/pageData';
 
 const containerVariants = {
   initial: {
@@ -60,12 +61,12 @@ const PageLoader = ({ setLoading, title }) => {
 
   return (
     <motion.div
-      className='home-loader-wrapper'
+      className={`${styles['home-loader-wrapper']}`}
       variants={containerVariants}
       initial={'initial'}
       animate={containerControls}
     >
-      <div className='home-loader-text'>
+      <div className={`${styles['home-loader-text']}`}>
         {chars.map((char, index) => (
           <motion.div
             key={index}
@@ -80,6 +81,6 @@ const PageLoader = ({ setLoading, title }) => {
       </div>
     </motion.div>
   );
-}
+};
 
-export default PageLoader
+export default PageLoader;

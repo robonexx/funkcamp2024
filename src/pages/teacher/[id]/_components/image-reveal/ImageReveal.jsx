@@ -1,10 +1,11 @@
 import React, { useRef, useEffect } from 'react';
-import { gsap } from 'gsap';
-import { Power2 } from 'gsap/all';
-import './image-reveal.scss';
-import ScrollIndicator from '../scrolldown/ScrollIndicator';
+import Image from 'next/image';
+import { gsap, Power2 } from 'gsap/all';
+import styles from './imagereveal.module.scss';
+import ScrollIndicator from '@/components/scrolldown/ScrollIndicator';
 
-const ImageReveal = ({ title, sub, img }) => {
+const ImageReveal = ({ name, country, img }) => {
+  console.log('ImageReveal props:', name, country, img);
   const image = useRef(null);
   const container = useRef(null);
   const overlayRef = useRef(null);
@@ -43,22 +44,25 @@ const ImageReveal = ({ title, sub, img }) => {
     return () => {
       tl.kill();
     };
-  }, [title, sub, img]);
+  }, [name, country, img]);
 
-  if (!title || !sub || !img) {
+  if (!name || !country || !img) {
     // If data is not available yet, return null or a loading indicator
-    return null;
+    return <div>Loading... </div>;
   }
 
+  const imagePath = `/img/${img}`;
+  
   return (
-    <div className='image-reveal'>
-      <h2 ref={text}>{title}</h2>
-      <div className='container' ref={container}>
-        <div className='overlay' ref={overlayRef}>
-          <p>{sub}</p>
+    <div className={`${styles['image-reveal']}`}>
+      {console.log(name, img, country)}
+      <h2 ref={text}>{name}</h2>
+      <div className={`${styles['container']}`} ref={container}>
+        <div className={`${styles['overlay']}`} ref={overlayRef}>
+          <p>{country}</p>
         </div>
-        <div className='image-container'>
-          <img ref={image} src={img} alt={title} />
+        <div className={`${styles['image-container']}`}>
+          {img && <Image src={imagePath} alt={name} width={600} height={500} priority />}
         </div>
       </div>
       <ScrollIndicator />

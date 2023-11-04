@@ -20,55 +20,55 @@ const Hero = () => {
 
   return (
     <motion.div className={styles.hero}>
-        <motion.p
-          className={styles.hero_subtitle}
-          initial={{ opacity: 0, x: -400 }}
-          animate={{
-            opacity: 1,
-            x: 0,
-          }}
-          transition={{ duration: 0.4, delay: 1.2, ease: 'easeInOut' }}
-        >
-          4 da lockers
-        </motion.p>
-        <motion.h1
-          className={`${styles.hero_title} ${styles.largest}`}
-          initial={{ opacity: 0, x: -200 }}
-          animate={{
-            opacity: 1,
-            x: 0,
-            width: '100%',
-          }}
-          transition={{ duration: 0.8, delay: 1.6, ease: 'easeInOut' }}
-        >
-          Funk
-        </motion.h1>
-        <motion.h1
-          className={styles.hero_title}
-          initial={{ opacity: 0, x: 200 }}
-          animate={{
-            opacity: 1,
-            x: 0,
-            width: '100%',
-          }}
-          transition={{ duration: 0.8, delay: 1.8, ease: 'easeInOut' }}
-        >
-          Camp
-        </motion.h1>
-        <motion.p
-          className={styles.desc}
-          initial={{ opacity: 0 }}
-          animate={{
-            opacity: 1,
-            width: '100%',
-          }}
-          transition={{ duration: 1.2, delay: 2, ease: 'easeInOut' }}
-        >
-          Swedens first locking camp, bringing the pioneers to share with
-          the locking community
-        </motion.p>
-
+      <motion.p
+        className={styles.hero_subtitle}
+        initial={{ opacity: 0, x: -400 }}
+        animate={{
+          opacity: 1,
+          x: 0,
+        }}
+        transition={{ duration: 0.4, delay: 1.2, ease: 'easeInOut' }}
+      >
+        4 da lockers
+      </motion.p>
+      <motion.h1
+        className={`${styles.hero_title} ${styles.largest}`}
+        initial={{ opacity: 0, x: -200 }}
+        animate={{
+          opacity: 1,
+          x: 0,
+          width: '100%',
+        }}
+        transition={{ duration: 0.8, delay: 1.6, ease: 'easeInOut' }}
+      >
+        Funk
+      </motion.h1>
+      <motion.h1
+        className={styles.hero_title}
+        initial={{ opacity: 0, x: 200 }}
+        animate={{
+          opacity: 1,
+          x: 0,
+          width: '100%',
+        }}
+        transition={{ duration: 0.8, delay: 1.8, ease: 'easeInOut' }}
+      >
+        Camp
+      </motion.h1>
+      <motion.p
+        className={styles.desc}
+        initial={{ opacity: 0 }}
+        animate={{
+          opacity: 1,
+          width: '100%',
+        }}
+        transition={{ duration: 1.2, delay: 2, ease: 'easeInOut' }}
+      >
+        Swedens first locking camp, bringing the pioneers to share with the
+        locking community
+      </motion.p>
       <motion.div
+        // plock 2
         className={styles.img_1}
         initial={{
           opacity: 0,
@@ -81,6 +81,7 @@ const Hero = () => {
         }}
         transition={{ duration: 0.4, delay: 2, ease: 'easeInOut' }}
       >
+        <Link href={'/teacher/' + 2}></Link>
         <Image
           className={styles.img}
           src={Img1}
@@ -96,6 +97,7 @@ const Hero = () => {
       </motion.div>
 
       <motion.div
+        // manne 1
         className={styles.img_2}
         initial={{ opacity: 0, width: 0 }}
         animate={{
@@ -105,6 +107,8 @@ const Hero = () => {
         }}
         transition={{ duration: 0.4, delay: 2.4, ease: 'easeInOut' }}
       >
+        {' '}
+        <Link href={'/teacher/' + 1}></Link>
         <Image
           className={styles.img}
           src={Img2}
@@ -120,6 +124,7 @@ const Hero = () => {
       </motion.div>
 
       <motion.div
+        // willow 4
         className={styles.img_3}
         initial={{ opacity: 0, width: 0 }}
         animate={{
@@ -129,6 +134,7 @@ const Hero = () => {
         }}
         transition={{ duration: 0.4, delay: 2.2, ease: 'easeInOut' }}
       >
+        <Link href={'/teacher/' + 4}></Link>
         <Image
           className={styles.img}
           src={Img3}
@@ -153,12 +159,17 @@ const Hero = () => {
         }}
         transition={{ duration: 0.4, delay: 2.2, ease: 'easeInOut' }}
       >
+        <Link href={'/teacher/' + 3}></Link>
         <Image
           className={styles.img}
           src={Img4}
           alt='charlie'
           fill
-          style={{ objectFit: 'cover', objectPosition: desktop ? '60%' : 'center', zIndex: '-1' }}
+          style={{
+            objectFit: 'cover',
+            objectPosition: desktop ? '60%' : 'center',
+            zIndex: '-1',
+          }}
           priority
         />
       </motion.div>
@@ -173,6 +184,7 @@ const Hero = () => {
         }}
         transition={{ duration: 0.4, delay: 2.2, ease: 'easeInOut' }}
       >
+        <Link href={'/teacher/' + 5}></Link>
         <Image
           className={styles.img}
           src={Img5}
@@ -187,10 +199,7 @@ const Hero = () => {
         />
       </motion.div>
 
-      <motion.div
-        className={styles.icon}
-       
-      >
+      <motion.div className={styles.icon}>
         <Link href='#videos' scroll={false}>
           <FiArrowDownCircle />
         </Link>

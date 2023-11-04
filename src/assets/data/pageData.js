@@ -1,9 +1,3 @@
-import MANNE from '../../../public/img/manne.png';
-import PLOCK from '../../../public/img/plock.png';
-import CHAR from '../../../public/img/charlie.png';
-import WILLOW from '../../../public/img/willow.png';
-import ALEX from '../../../public/img/alexander.png';
-
 const ytVid1 = 'XMMKQYdEfMs';
 const ytVid2 = 'IS9m2-fJ4Y0';
 const ytVid3 = '6F2lsPwIYWg';
@@ -83,63 +77,45 @@ export const videoData = [
 export const teacherData = [
   {
     id: 1,
-    title: 'Manne Schutt',
-    sub: 'SWE',
-    img: MANNE,
-  },
-  {
-    id: 2,
-    title: 'P Lock',
-    sub: 'FR',
-    img: PLOCK,
-  },
-  {
-    id: 3,
-    title: 'Lady Charlock',
-    sub: 'SWE',
-    img: CHAR,
-  },
-  {
-    id: 4,
-    title: 'Willow',
-    sub: 'FR',
-    img: WILLOW,
-  },
-  {
-    id: 5,
-    title: 'A-train',
-    sub: 'SWE',
-    img: ALEX,
-  },
-];
-
-export const teacherBio = [
-  {
-    id: 1,
+    name: 'Manne Schutt',
+    country: 'SWE',
+    img: 'manne.png',
     title: 'Manne Schutt',
     subtitle: 'Funkademics',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum assumenda similique exercitationem possimus laudantium animi sunt, a molestiae veritatis in corporis consequatur cupiditate adipisci beatae earum minus blanditiis, iste deserunt nostrum eaque non nesciunt. Fuga repellat quisquam ut saepe id! Dolores, dolorem eius! Praesentium quae blanditiis esse eaque amet! Cupiditate.',
   },
   {
     id: 2,
+    name: 'P Lock',
+    country: 'FR',
+    img: 'plock.png',
     title: 'Patrick Pires',
     subtitle: 'Team Rockets',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum assumenda similique exercitationem possimus laudantium animi sunt, a molestiae veritatis in corporis consequatur cupiditate adipisci beatae earum minus blanditiis, iste deserunt nostrum eaque non nesciunt. Fuga repellat quisquam ut saepe id! Dolores, dolorem eius! Praesentium quae blanditiis esse eaque amet! Cupiditate.',
   },
   {
     id: 3,
+    name: 'Lady Charlock',
+    country: 'SWE',
+    img: 'charlie.png',
     title: 'Charlotte Prag',
     subtitle: 'Moves Per Minute',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum assumenda similique exercitationem possimus laudantium animi sunt, a molestiae veritatis in corporis consequatur cupiditate adipisci beatae earum minus blanditiis, iste deserunt nostrum eaque non nesciunt. Fuga repellat quisquam ut saepe id! Dolores, dolorem eius! Praesentium quae blanditiis esse eaque amet! Cupiditate.',
   },
   {
     id: 4,
+    name: 'Willow',
+    country: 'FR',
+    img: 'willow.png',
     title: 'Willow Evann',
     subtitle: 'Team Rocket',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum assumenda similique exercitationem possimus laudantium animi sunt, a molestiae veritatis in corporis consequatur cupiditate adipisci beatae earum minus blanditiis, iste deserunt nostrum eaque non nesciunt. Fuga repellat quisquam ut saepe id! Dolores, dolorem eius! Praesentium quae blanditiis esse eaque amet! Cupiditate.',
   },
   {
     id: 5,
+    name: 'A-train',
+    country: 'SWE',
+    img: 'alexander.png',
     title: 'Alexander Dam',
     subtitle: 'Funky 4 Brothers',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum assumenda similique exercitationem possimus laudantium animi sunt, a molestiae veritatis in corporis consequatur cupiditate adipisci beatae earum minus blanditiis, iste deserunt nostrum eaque non nesciunt. Fuga repellat quisquam ut saepe id! Dolores, dolorem eius! Praesentium quae blanditiis esse eaque amet! Cupiditate.',
