@@ -1,16 +1,17 @@
 import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import { teacherData } from '@/assets/data/pageData';
-import Bio from './_components/bio/Bio';
-import PageLoader from './_components/page-loader/PageLoader';
-import ImageReveal from './_components/image-reveal/ImageReveal';
+import Bio from '../../../components/bio/Bio';
+import PageLoader from '../../../components/page-loader/PageLoader';
+import ImageReveal from '../../../components/image-reveal/ImageReveal';
 import styles from './teacherPage.module.scss';
 
 const Teacher = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  const id = usePathname().replace('/teacher/', '');
+  const pathname = usePathname();
+  const id = pathname ? pathname.replace('/teacher/', '') : '';
 
   useEffect(() => {
     // Simulate an asynchronous data fetch
