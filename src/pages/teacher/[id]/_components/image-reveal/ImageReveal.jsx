@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import Image from 'next/image';
 import { gsap, Power2 } from 'gsap';
 import styles from './imagereveal.module.scss';
-import ScrollIndicator from '../../components/scrolldown/ScrollIndicator';
+import ScrollIndicator from '../../../../../components/scrolldown/ScrollIndicator';
 
 const ImageReveal = ({ name, country, img }) => {
   console.log('ImageReveal props:', name, country, img);
@@ -19,12 +19,13 @@ const ImageReveal = ({ name, country, img }) => {
       duration: 1.4,
       width: '0%',
       ease: Power2.easeInOut,
+      delay: 2
     });
     tl.from(image.current, {
-      duration: 1.4,
+      duration: 2,
       scale: 1.6,
       ease: Power2.easeInOut,
-      delay: -1.4,
+      delay: 1.5,
     });
 
     tl.fromTo(
@@ -36,7 +37,7 @@ const ImageReveal = ({ name, country, img }) => {
         duration: 1,
         opacity: 1,
         ease: Power2.easeInOut,
-        delay: -0.5,
+        delay: -1,
       }
     );
 

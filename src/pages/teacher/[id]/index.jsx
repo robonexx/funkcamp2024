@@ -6,7 +6,7 @@ import PageLoader from './_components/page-loader/PageLoader';
 import ImageReveal from './_components/image-reveal/ImageReveal';
 import styles from './teacherPage.module.scss';
 
-const Index = () => {
+const Teacher = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -61,4 +61,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Teacher;
