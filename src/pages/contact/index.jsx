@@ -32,6 +32,7 @@ const Contact = () => {
     message: '',
   });
   const [validationMessage, setValidationMessage] = useState('');
+  const [isButtonDisabled, setIsButtonDisabled] = useState(false);
   /*  const [modalOpen, setModalOpen] = useState(false); */
 
   const router = useRouter();
@@ -84,6 +85,10 @@ const Contact = () => {
       setTimeout(() => {
         router.push('/');
       }, 5000);
+
+      setTimeout(() => {
+        setIsButtonDisabled(false);
+      }, 30000);
     } else {
       console.log('is not valid');
       setValidationMessage(
@@ -205,6 +210,10 @@ const Contact = () => {
           type='submit'
           name='submit'
           value='Submit'
+          disabled={isButtonDisabled}
+          style={{
+            pointerEvents: isButtonDisabled ? 'none' : 'auto',
+          }}
           /* disabled={!isValid} */
           /*  onClick={() => (modalOpen ? close() : open())} */
         />
