@@ -60,9 +60,10 @@
 .intro {
   margin: 0rem auto 2rem;
   width: 80%;
+  font-family: $font-base;
 
   &>p {
-    color: $color-4;
+    color: $color-white;
     margin: 0.5rem 0;
     text-align: center;
   }

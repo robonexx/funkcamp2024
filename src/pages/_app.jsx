@@ -1,13 +1,5 @@
-import '@/styles/globals.scss'
-import { Oxygen } from 'next/font/google'
 import Layout from '@/components/layout/layout'
-import { useState, useEffect } from 'react'
-
-const oxygen = Oxygen({
-  weight: ['300', '400', '700'],
-  style: ['normal'],
-  subsets: ['latin']
-})
+import '@/styles/globals.scss'
 
 
 export default function App({ Component, pageProps }) {
@@ -19,7 +11,7 @@ export default function App({ Component, pageProps }) {
     setActive(false); // Close the navigation panel
   }, [pathname]); */
   return (
-    <Layout className={oxygen.className}>
+    <Layout>
       <Component {...pageProps} />
     </Layout>
   

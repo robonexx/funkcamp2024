@@ -3,9 +3,9 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import styles from '@/styles/Home.module.scss';
 import Hero from '@/components/Hero/Hero';
-import Bio from '@/components/bio/Bio';
-import S2 from '/public/images/dc.png';
 import Info from '@/components/info/Info';
+import S2 from '/public/images/dc.png';
+import Videos from '@/components/videowrapper/VideoWrapper';
 
 export default function Home() {
   return (
@@ -42,7 +42,7 @@ export default function Home() {
           transition={{ duration: 0.4, delay: 0.6, ease: 'easeInOut' }}
         ></motion.div>
         <Hero />
-        <Info />
+        <Videos />
         <div className={styles.intro}>
           <h2>Thank you everyone!</h2>
           <p>
@@ -57,7 +57,7 @@ export default function Home() {
           </p>
 
           <div className={styles.bio}>
-            <Bio />
+            <Info />
           </div>
           <h4>To contact us check contact page</h4>
         </div>

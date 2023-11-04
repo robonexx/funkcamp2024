@@ -20,7 +20,6 @@ const Hero = () => {
 
   return (
     <motion.div className={styles.hero}>
-      <div className='text'>
         <motion.p
           className={styles.hero_subtitle}
           initial={{ opacity: 0, x: -400 }}
@@ -33,7 +32,7 @@ const Hero = () => {
           4 da lockers
         </motion.p>
         <motion.h1
-          className={styles.hero_title}
+          className={`${styles.hero_title} ${styles.largest}`}
           initial={{ opacity: 0, x: -200 }}
           animate={{
             opacity: 1,
@@ -68,7 +67,6 @@ const Hero = () => {
           Swedens first locking camp, bringing the pioneers to share with
           the locking community
         </motion.p>
-      </div>
 
       <motion.div
         className={styles.img_1}
@@ -190,16 +188,11 @@ const Hero = () => {
       </motion.div>
 
       <motion.div
-        className={styles.readmore}
-        initial={{ opacity: 0, width: 0 }}
-        animate={{
-          opacity: 1,
-          width: '12rem',
-        }}
-        transition={{ duration: 0.4, delay: 2.4, ease: 'easeInOut' }}
+        className={styles.icon}
+       
       >
-        <Link href='#bio' scroll={false}>
-          <FiArrowDownCircle className={styles.icon} />
+        <Link href='#videos' scroll={false}>
+          <FiArrowDownCircle />
         </Link>
       </motion.div>
     </motion.div>

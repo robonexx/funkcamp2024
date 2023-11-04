@@ -10,14 +10,12 @@
 html, body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
   background: $color-bg;
   color: $color-white;
+  font-family: $font-base;
   scroll-behavior: smooth;
 }
  body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video{
@@ -25,7 +23,6 @@ html, body {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font-family: $font-base;
   vertical-align: baseline;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -70,75 +67,52 @@ input{
 }
 
 
+.largest {
+  padding: 2rem;
+  font-size: $font-size-xxxl;
+  line-height: 1.5;
+}
 
 h1 {
-font-size: 3.5rem;
-
-@media screen and (max-width: 1185px) {
-  font-size: 2.5rem;
+  position: relative;
+  font-size: $font-size-xxl;
+  font-family: $font-headline;
+  z-index: 2;
+  line-height: 1.5;
 }
 
-  @media screen and (max-width: 960px) {
-    font-size: 2rem;
+h2 {
+  position: relative;
+  font-size: $font-size-xl;
+  font-family: $font-base;
+  z-index: 2;
+  letter-spacing: 2px;
+  line-height: 1.5;
 }
 
-@media screen and (max-width: 40em) {
-  font-size: 1.6rem;
-}
-}
-
-
-  h2 {
-    font-family: $font-base;
-    font-size: 2.5rem;
-    color: $color-1;
-    padding: 1rem 0;
-
-    @media screen and (max-width: 960px) {
-      font-size: 1.75rem;
-  }
-
-  @media screen and (max-width: 40em) {
-    font-size: 1.5rem;
-  }
+h3 {
+  position: relative;
+  font-size: $font-size-l;
+  font-family: $font-base;
+  z-index: 2;
+  letter-spacing: 1px;
+  line-height: 1.5;
 }
 
-  
-  h3 {
-    font-size: 1.5rem;
-    color: $color-1;
-    @media screen and (max-width: 960px) {
-     
-  }
-  @media screen and (max-width: 40em) {
-    font-size: 1rem;
-  }
-  }
+h4 {
+  position: relative;
+  font-size: $font-size-m;
+  font-family: $font-base;
+  z-index: 2;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
 
-  h3 {
-    font-size: $font-size-base;
-
-    @media screen and (max-width: 960px) {
-     font-size: $font-size-base * 0.95;
-  }
-  @media screen and (max-width: 40em) {
-    font-size: $font-size-s;
-  }
-  }
-
-  
-  p {
-    font-size: 1.2rem;
-    line-height: 1.4rem;
-
-    @media screen and (max-width: 960px) {
-     font-size: 1rem;
-     line-height: 1.1rem;
-    }
-
-    @media screen and (max-width: 40em) {
-        font-size: $font-size-base;
-        line-height: 1.2rem;
-       
-  }
-  }
+p {
+  position: relative;
+  font-size: $font-size-base;
+  font-weight: 400;
+  font-family: $font-base;
+  line-height: 1.5;
+  z-index: 2;
+}
