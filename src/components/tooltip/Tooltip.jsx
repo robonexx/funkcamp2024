@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 
-import styles from './toolTip.module.scss';
+import styles from './tooltip.module.scss';
 
 const MyPortal = ({ children }) => {
   const el = useRef(document.createElement('div'));
