@@ -6,6 +6,7 @@ import Hero from '@/components/Hero/Hero';
 import Info from '@/components/info/Info';
 import S2 from '/public/images/dc.png';
 import Videos from '@/components/videowrapper/VideoWrapper';
+import TeachersList from '@/components/teachers/TeachersList';
 
 export default function Home() {
 
@@ -43,6 +44,7 @@ export default function Home() {
           transition={{ duration: 0.4, delay: 0.6, ease: 'easeInOut' }}
         ></motion.div>
         <Hero />
+        <TeachersList />
         <Videos />
         <div className={styles.intro}>
           <h2>Thank you everyone!</h2>
