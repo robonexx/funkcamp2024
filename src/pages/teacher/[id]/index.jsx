@@ -32,7 +32,6 @@ const Teacher = () => {
 
   return (
     <div className={styles.teacher}>
-      show teacher here
       {!loading && (
         <>
           {data &&
