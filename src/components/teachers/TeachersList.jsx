@@ -10,7 +10,7 @@ import Img2 from '/public/img/m1.png';
 import Img3 from '/public/img/w1.png';
 import Img4 from '/public/img/c1.png';
 import Img5 from '/public/img/a1.png';
-import Tooltip from '../tooltip/ToolTip';
+import ToolT from '../tooltip/ToolT';
 
 const TeachersList = () => {
   const desktop = useMediaQuery(768);
@@ -41,44 +41,44 @@ const TeachersList = () => {
       </motion.p>
       <div className={styles.tooltip_wrapper}>
         <div className={styles.grid_item}>
-          <Tooltip
+          <ToolT
             title='Super Powers'
             description='Style and Grace - Attitude- Perfectionist, Stunts, Trix, Show stopping moves'
           >
             P-Lock The Thunderman
-          </Tooltip>
+          </ToolT>
         </div>
         <div className={styles.grid_item}>
-          <Tooltip
+          <ToolT
             title='Super Powers'
             description='Pure Funk - Character - Grooves, Playfullness, Sooouuul brotha no.1'
           >
             Willow Evann
-          </Tooltip>
+          </ToolT>
         </div>
         <div className={styles.grid_item}>
-          <Tooltip
+          <ToolT
             title='Super Powers'
             description='Attitude - Style and Grace - Maturity, Fierce, Powerful impact on the scene'
           >
             Charlie - Lady Charlock
-          </Tooltip>
+          </ToolT>
         </div>
         <div className={styles.grid_item}>
-          <Tooltip
+          <ToolT
             title='Super Powers'
             description='Pure Funk - Attitude - Unique, powerful, playfullness, perfectionism'
           >
             Alex - A-train
-          </Tooltip>
+          </ToolT>
         </div>
         <div className={styles.grid_item}>
-          <Tooltip
+          <ToolT
             title='Super Powers'
             description='Character - Style and Grace - Flawless technique, precision, stunts, fundamentals'
           >
             Manne - Funky Asparagus
-          </Tooltip>
+          </ToolT>
         </div>
       </div>
       <motion.div

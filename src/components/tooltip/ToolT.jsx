@@ -17,7 +17,7 @@ const MyPortal = ({ children }) => {
   return ReactDOM.createPortal(children, el.current);
 };
 
-const Tooltip = ({ title, description, children, width = 256, space = 16 }) => {
+const ToolT = ({ title, description, children, width = 256, space = 16 }) => {
   const [visible, setVisible] = useState(false);
   const [style, setStyle] = useState({});
   const el = useRef(null);
@@ -69,4 +69,4 @@ const Tooltip = ({ title, description, children, width = 256, space = 16 }) => {
   );
 };
 
-export default Tooltip;
+export default ToolT;
