@@ -1,8 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import IMG from '/public/gregskeeter.JPG';
-import IMG2 from '/public/2007.JPG';
+import IMG from '/public/fc05.jpg';
 
 // styles
 import styles from './About.module.scss';
