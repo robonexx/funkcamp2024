@@ -11,15 +11,15 @@ const Info = () => {
   return (
     <div className={styles.bio}>
       <h2>FUNKCAMP</h2>
-      <h4>2023</h4>
+      <h2>2024</h2>
 
       <br />
-      <Image src={IMGBIO} alt='funkcamp' width={'100%'} height={'auto'} />
+      {/*  <Image src={IMGBIO} alt='funkcamp' width={'100%'} height={'auto'} /> */}
       <div className={styles.adress}>
         <h4>MAIN VENUE!</h4>
         <h2 style={{ margin: '2rem 0', color: '#ffa900' }}>DANSCENTER</h2>
         <p>Fryshuset</p>
-        <p>DANSSTUDIO 2</p>
+        <p>DANSSTUDIO  1 or / and 2</p>
         <h4 style={{ textAlign: 'left', marginTop: '4rem' }}>
           Adress for venue:
         </h4>
@@ -51,19 +51,49 @@ const Info = () => {
         <br />
       </div>
       <br />
-      <h3 style={{ textDecoration: 'line-through' }}>Friday: At Danscenter </h3>
-      <p style={{ color: 'tomato' }}>Done did with it</p>
+      <p>Here is a pre- schedule, changes might happen so be on the look out</p>
+      <h3 /* style={{ textDecoration: 'line-through' }} */>
+        Friday: At Danscenter{' '}
+      </h3>
+      {/*  <p style={{ color: 'tomato' }}>Done did with it</p> */}
+      <p>1 st of march</p>
       <ul>
         <li>17.30 Welcome and registration - Danscenter</li>
         <li>18.00-21.00 workshops</li>
         <li>21.00 doors close</li>
         <li>Rest for saturday</li>
       </ul>
-      <h3 style={{ textDecoration: 'line-through' }}>Saturday: Mixed Venues</h3>
-      <p style={{ color: 'tomato' }}>Done did with it</p>
+      <h3 /* style={{ textDecoration: 'line-through' }} */>
+        Saturday: At Dancer
+      </h3>
+      {/* <p style={{ color: 'tomato' }}>Done did with it</p> */}
+      <p>2nd of march</p>
       <ul>
-        <li>- A little re-scedule</li>
-        {/* <li>10.00 - 11.15 warm-up workshop with Rob-One <br/> - At Danscenter</li> */}
+        <li>11.00-12.15 Workshop with Manne</li>
+        <li>13.30 - 14.45 Workshop with Willow</li>
+        <li>15.00 - 17.00 Workshop with P.Lock</li>
+        <li>More info coming soon... about saturday</li>
+      </ul>
+      <h3 /* style={{ textDecoration: 'line-through' }} */>
+        Sunday: At danscenter
+      </h3>
+      {/*  <p style={{ color: 'tomato' }}>Done did with it</p> */}
+      <p>3rd of march</p>
+      <ul>
+        <li>12.00 - 14.00 P.Lock</li>
+        <li>14.00-15.00 Break</li>
+        <li>15.00-17.00 Willow & Manne</li>
+        <li>17.20 - Q & As </li>
+        <li>THE END</li>
+      </ul>
+    </div>
+  );
+};
+
+export default Info;
+
+/* 
+<li>- A little re-scedule</li>
         <li>
           12.00 Workshop with Tony Gogo at Studion Kulturhuset + session <br />-
           At STUDION
@@ -86,18 +116,5 @@ const Info = () => {
           16.30-20.00 - Workshops continue for funkcamp <br />- At Danscenter
         </li>
         <li>Teacher schedule coming up on friday</li>
-      </ul>
-      <h3 style={{ textDecoration: 'line-through' }}>Sunday: At danscenter</h3>
-      <p style={{ color: 'tomato' }}>Done did with it</p>
-      <ul>
-        <li>12.00 - 13.00 Manny</li>
-        <li>13.00 - 14.00 Willow</li>
-        <li>14.00-15.30 Break</li>
-        <li>15.30-16.30 Tony Gogo </li>
-        <li>16.30 Q & A</li>
-      </ul>
-    </div>
-  );
-};
 
-export default Info;
+*/

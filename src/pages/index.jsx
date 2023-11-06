@@ -25,7 +25,7 @@ export default function Home() {
           animate={{
             width: 0,
           }}
-          transition={{ duration: 0.4, delay: 0.2, ease: 'easeInOut' }}
+          transition={{ duration: 0.3, delay: 0, ease: 'easeInOut' }}
         ></motion.div>
         <motion.div
           className={`${styles.overlay} ${styles.second}`}
@@ -33,7 +33,7 @@ export default function Home() {
           animate={{
             width: 0,
           }}
-          transition={{ duration: 0.4, delay: 0.4, ease: 'easeInOut' }}
+          transition={{ duration: 0.3, delay: 0.2, ease: 'easeInOut' }}
         ></motion.div>
         <motion.div
           className={`${styles.overlay} ${styles.third}`}
@@ -41,13 +41,13 @@ export default function Home() {
           animate={{
             width: 0,
           }}
-          transition={{ duration: 0.4, delay: 0.6, ease: 'easeInOut' }}
+          transition={{ duration: 0.3, delay: 0.4, ease: 'easeInOut' }}
         ></motion.div>
         <Hero />
         <TeachersList />
         <Videos />
         <div className={styles.intro}>
-          <h2>Thank you everyone!</h2>
+          {/* <h2>Thank you everyone!</h2>
           <p>
             We are happy that you came and shared with US in 2023. <br />
             Thanks to all of you we are able to do this, I hope you felt the
@@ -57,7 +57,7 @@ export default function Home() {
             humans. We are made of energy and the energy this weekend did not
             lie. Soulful, connecting with others and your innerself to be able
             to become a better mover and feel what we actually are doing.
-          </p>
+          </p> */}
 
           <div className={styles.bio}>
             <Info />
@@ -66,16 +66,16 @@ export default function Home() {
         </div>
 
         <div className={styles.sponsors}>
-          <h2>In association with</h2>
-          <div className={styles.img}>
-            {/* <Image
+          <h2>In collaboration with</h2>
+         {/*  <div className={styles.img}>
+            <Image
               className={styles.img}
               src={S1}
               alt='gatuverket'
               fill
               priority
-            /> */}
-          </div>
+            />
+          </div> */}
           <Image
             src={S2}
             alt='danscenter'

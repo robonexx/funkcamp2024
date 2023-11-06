@@ -140,8 +140,8 @@ const TeachersList = () => {
         initial={{ opacity: 0, width: 0 }}
         animate={{
           opacity: 1,
-          width: desktop ? '100vw' : '30vw',
-          height: desktop ? '50vh' : '65vh',
+          width: desktop ? '100vw' : '25vw',
+          height: desktop ? '50vh' : '60vh',
         }}
         transition={{ duration: 0.4, delay: 2.2, ease: 'easeInOut' }}
       >

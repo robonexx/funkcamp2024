@@ -151,13 +151,13 @@ const Hero = () => {
 
       <motion.div
         className={styles.img_4}
-        initial={{ opacity: 0, width: 0 }}
+        initial={{ opacity: 0, width: '100vw', height: '100vh'}}
         animate={{
           opacity: 1,
           width: desktop ? '100vw' : '100vw',
           height: desktop ? '100vh' : '100vh',
         }}
-        transition={{ duration: 0.4, delay: 2.2, ease: 'easeInOut' }}
+        transition={{ duration: 1.2, delay: 1.6, ease: 'easeInOut' }}
       >
         <Link href={'/teacher/' + 3}></Link>
         <Image
