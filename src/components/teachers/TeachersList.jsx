@@ -15,7 +15,7 @@ import ToolT from '../tooltip/ToolT';
 const TeachersList = () => {
   const desktop = useMediaQuery(768);
   return (
-    <div className={styles.teachers_wrapper}>
+    <div className={styles.teachers_wrapper}  id='videos'>
       <motion.h1
         className={`${styles.teachers_title}`}
         initial={{ opacity: 0, x: -200 }}
