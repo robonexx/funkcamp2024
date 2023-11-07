@@ -237,7 +237,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 99;
   pointer-events: none;
   display: grid;
   grid-template-columns: 1fr; // Single column for mobile

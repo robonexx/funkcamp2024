@@ -19,7 +19,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <main className={styles.home}>
-        <motion.div
+       {/*  <motion.div
           className={`${styles.overlay} ${styles.first}`}
           initial={{ width: '100%' }}
           animate={{
@@ -42,7 +42,7 @@ export default function Home() {
             width: 0,
           }}
           transition={{ duration: 0.3, delay: 0.4, ease: 'easeInOut' }}
-        ></motion.div>
+        ></motion.div> */}
         <Hero />
         <TeachersList />
         <Videos />
