@@ -1,0 +1,21 @@
+@use '../../styles/base/' as *;
+
+.btn {
+    width: fit-content;
+    width: 160px;
+    height: fit-content;
+    padding: 1rem 2rem;
+    display: grid;
+    place-content: center;
+    color: $color-white;
+    background-color: $color-card-bg;
+    border: 1px solid $color-2;
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $color-2;
+        border: 1px solid $color-1;
+        color: white;
+    }
+}

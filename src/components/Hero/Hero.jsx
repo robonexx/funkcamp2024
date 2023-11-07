@@ -14,12 +14,24 @@ import Img5 from '/public/images/atrain-fc24.png';
 
 // styles
 import styles from './Hero.module.scss';
+import Button from '../button/Button';
+import LinkBtn from '../button/LinkBtn';
 
 const Hero = () => {
   const desktop = useMediaQuery(768);
 
   return (
     <motion.div className={styles.hero}>
+      <motion.div className={styles.hero_btn_wrapper}
+      initial={{ opacity: 0, x: 400 }}
+      animate={{
+        opacity: 1,
+        x: 0,
+      }}
+      transition={{ duration: 0.6, delay: 3, ease: 'easeInOut' }}
+      >
+        <LinkBtn title='Register' link='/contact'/>
+      </motion.div>
       <motion.p
         className={styles.hero_subtitle}
         initial={{ opacity: 0, x: -400 }}
