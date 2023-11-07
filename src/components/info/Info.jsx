@@ -59,7 +59,7 @@ const Info = () => {
       <p>1 st of march</p>
       <ul>
         <li>17.30 Welcome and registration - Danscenter</li>
-        <li>18.00-21.00 workshops</li>
+        <li>18.00-21.00 Willow & Atrain</li>
         <li>21.00 doors close</li>
         <li>Rest for saturday</li>
       </ul>
@@ -69,8 +69,8 @@ const Info = () => {
       {/* <p style={{ color: 'tomato' }}>Done did with it</p> */}
       <p>2nd of march</p>
       <ul>
-        <li>11.00-12.15 Workshop with Manne</li>
-        <li>13.30 - 14.45 Workshop with Willow</li>
+        <li>11.00-12.15 Workshop with Charlie</li>
+        <li>13.30 - 14.45 Workshop with Manne</li>
         <li>15.00 - 17.00 Workshop with P.Lock</li>
         <li>More info coming soon... about saturday</li>
       </ul>

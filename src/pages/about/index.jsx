@@ -48,23 +48,19 @@ const About = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 1.6, delay: 1.6 }}
       >
-        Funkcamp 2005 ✨ Frist ever locking only camp in Sweden and Europe.
+        Funkcamp 2005 ✨ First ever dance camp dedicated to locking in Sweden and Europe.
         <br />
-        From there the rest is history, we now have camps all over the world
+        From there the rest is history, we are now coming in to our 20th anniversay in 2024.
         <br />
-        Original idea to camp was from OG Skeeter Rabbit and with the help of
-        Greg Campbellock Jr, we put the ideas together and set the plans in
-        motion
+        Original idea to camp was from me working on a kids show for UR utbildnings radion in Sweden, I was the producer of that show and was asked to have my students teach different "street styles", me asking the organisation to get hold of Don Campbell (who sadly never responded), OG Skeeter Rabbit, Greg Campbellock Jr for me.
         <br />
+        We (me and Skeeter) had a few emails sent back and forth, I asked him to come and teach the foundation and history in Sweden, he said shure and said he connect me with Greg.
         <br />
-        While at the sametime the Elite camp started in LA, also original idea
-        from Skeeter and Greg, today many are talking about what and who was
-        first actually not even knowing what was said and planned before
-        everything was set in motion. Still the Vegas camp was a good place for
-        many and sadly not continued.
+        With the help of OG Skeeter Rabbit & Greg Campbellock Jr, we put the ideas together and set the plans in motion for what was to become FUNKCAMP (sweden)
+        <br />
       </motion.p>
       <p>
-        The past soon 20 years has been remarkable, learning from the pioneers,
+        The past soon 19 years has been remarkable, learning from the pioneers,
         connecting the youth and future lockers to the pioneers and to be able
         to learn from some of the sources directly has been an honor, to see
         some lockers grow from beeing kids at the first camps to being some of
@@ -74,22 +70,21 @@ const About = () => {
         the clubs, soul train and yes GOGO Brothers family. Many have been
         supporting the camp for years now, but without these 3 pillars, OG
         Skeeter Rabbit, TONY GOGO and Campbellock JR, This camp would have not
-        existed. So Im deeply honered and humbled by the help, continues support
+        existed. So Im deeply honered and humbled by the help, continued support
         and the brother hood you have shown us.
         <br />
         <br />
-        And non of this or the style with the original name Campellocking from
-        the creator Don Campbellock Campbell, this style aka locking, has been
-        spreading around the world and been enjoyed by many. The fact that we
-        are all a part of an afro-american legacy and it is our duty to pass it
-        on to the new generations. The Lockers, Campbellock dancers was well
-        known groups in the 70s, and Don was a part of them
+        Other people who helped me from the start has been Manne Schutt and Amine Baraka, they where always helping out and fixing around the camp. A-train was also helping out with the camp when he was still a teenager. Funky 4 brothers was always supportive and helped alot. Also some other pioneers has been involved in several camps, such as Damon Frost, Patrik "PRIME" Helge.  
+        <br />
+        We had the honor to have Loose Caboose, Lock Smith, Anthony Edwards come teach at the camp too. And our brother Willow has been playing a mayor part of the camp the past years.
         <br />
         <br />
-        Although Campbell can&apos;t lay claim to having the first Locking crew,
-        that distinction belongs to Tony GoGo and the Go-Go, and Yo-Yo Brothers,
-        Campbell&apos;s simply named group, The Lockers, can be considered the
-        ones that spread the gospel of Locking all over the world.
+        And we have had the honor to keep having the assosiasion and collaboration with Danscenter stockholm and now Danscenter Fryshuset were the school continues to live its legacy. This is also the venue for Funkcamp 2024. 
+        <br />
+        <br />
+        We wanna thank all of you who has come to the camps. Connecting with lockers from around the world and have direct conversations and teachings from our finest lockers and pioneers of locking. Our guest teachers who is a pillar holding high level at the camp and teaching their passion with us. 
+        <br /><br /> 
+        We hope to see you at the next camp in 2024 & we already started planing an upcoming camp with some great guests that never visited us before. :D
       </p>
     </div>
   );
