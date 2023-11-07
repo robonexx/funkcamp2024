@@ -51,7 +51,7 @@ const Info = () => {
         <br />
       </div>
       <br />
-      <p>Here is a pre- schedule, changes might happen so be on the look out</p>
+      <p className={styles.schedulestart}>Here is a pre- schedule, changes might happen so be on the look out</p>
       <h3 /* style={{ textDecoration: 'line-through' }} */>
         Friday: At Danscenter{' '}
       </h3>
