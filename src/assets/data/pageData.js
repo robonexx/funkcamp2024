@@ -49,7 +49,7 @@ export const videoData = [
     vtime: '20',
   },
   {
-    name: 'Funky Asparagus',
+    name: 'Willow',
     id: 4,
     vid: ytVid2,
     vtime: '5',
@@ -61,7 +61,7 @@ export const videoData = [
     vtime: '24',
   },
   {
-    name: 'Willow',
+    name: 'Funky Asparagus',
     id: 6,
     vid: ytVid3,
     vtime: '104',
