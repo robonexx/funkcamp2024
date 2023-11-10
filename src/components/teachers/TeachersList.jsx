@@ -32,8 +32,7 @@ const TeachersList = () => {
         className={styles.desc}
         initial={{ opacity: 0 }}
         animate={{
-          opacity: 1,
-          width: '100%',
+          opacity: 1
         }}
         transition={{ duration: 1.2, delay: 2, ease: 'easeInOut' }}
       >

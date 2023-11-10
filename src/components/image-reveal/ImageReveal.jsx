@@ -67,8 +67,8 @@ const ImageReveal = ({ name, country, img }) => {
             <Image
               src={imagePath}
               alt={name}
-              width={600}
-              height={500}
+              width={400}
+              height={800}
               priority
             />
           )}

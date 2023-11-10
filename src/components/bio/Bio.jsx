@@ -9,7 +9,7 @@ const Bio = ({ title, subtitle, desc }) => {
   return (
     <div className={`${styles.bio}`}>
       <TextReveal>
-        <h1>{title}</h1>
+        <h2 className={styles.title}>{title}</h2>
       </TextReveal>
       <TextReveal>
         <h2>{subtitle}</h2>
