@@ -11,11 +11,55 @@ import Img3 from '/public/img/w1.png';
 import Img4 from '/public/img/c1.png';
 import Img5 from '/public/img/a1.png';
 import ToolT from '../tooltip/ToolT';
+import Teacher from './Teacher';
+
+const teacherData = [
+  {
+    name: 'P-Lock The Thunderman',
+    title: 'Super Powers',
+    description:
+      'Style and Grace - Attitude- Perfectionist, Stunts, Trix, Show stopping moves',
+    image: Img1,
+    id: 1
+  },
+  {
+    name: 'Willow Evann',
+    title: 'Super Powers',
+    description:
+      'Pure Funk - Character - Grooves, Playfullness, Sooouuul brotha no.1',
+    image: Img3,
+    id: 2
+  },
+  {
+    name: 'Lady Charlock',
+    title: 'Super Powers',
+    description:
+      'Style and Grace - Attitude - Maturity, Fierce, Powerful',
+    image: Img4,
+    id: 3
+  },
+  {
+    name: 'A-Train',
+    title: 'Super Powers',
+    description:
+      'Pure Funk - Attitude - Unique, powerful, playfullness, perfectionism',
+    image: Img5,
+    id: 4
+  },
+  {
+    name: 'Funky Asparagus',
+    title: 'Super Powers',
+    description:
+      'Character - Style and Grace - Flawless technique, precision, stunts, fundamentals',
+    image: Img2,
+    id: 5
+  },
+];
 
 const TeachersList = () => {
   const desktop = useMediaQuery(768);
   return (
-    <div className={styles.teachers_wrapper}  id='videos'>
+    <div className={styles.teachers_wrapper} id='videos'>
       <motion.h1
         className={`${styles.teachers_title}`}
         initial={{ opacity: 0, x: -200 }}
@@ -32,7 +76,7 @@ const TeachersList = () => {
         className={styles.desc}
         initial={{ opacity: 0 }}
         animate={{
-          opacity: 1
+          opacity: 1,
         }}
         transition={{ duration: 1.2, delay: 2, ease: 'easeInOut' }}
       >
@@ -80,8 +124,17 @@ const TeachersList = () => {
           </ToolT>
         </div>
       </div>
-      <motion.div
-        // plock 2
+      <motion.div className={styles.teachers_images}>
+        {teacherData.map(({id, image, name}) => (
+          <Teacher
+            key={id}
+            id={id}
+            name={name}
+            image={image}
+          />
+        ))}
+      </motion.div>
+   {/*    <motion.div
         className={styles.img_1}
         initial={{
           opacity: 0,
@@ -95,8 +148,6 @@ const TeachersList = () => {
         transition={{ duration: 0.4, delay: 2, ease: 'easeInOut' }}
       >
         <Link href={'/teacher/' + 2}></Link>
-        {/*  <div className={styles.tooltip_wrap}> */}
-        {/*   </div> */}
         <Image
           className={styles.img}
           src={Img1}
@@ -111,8 +162,7 @@ const TeachersList = () => {
       </motion.div>
 
       <motion.div
-        // willow 4
-        className={styles.img_3}
+        className={styles.img_1}
         initial={{ opacity: 0, width: 0 }}
         animate={{
           opacity: 1,
@@ -135,7 +185,7 @@ const TeachersList = () => {
         />
       </motion.div>
       <motion.div
-        className={styles.img_4}
+        className={styles.img_1}
         initial={{ opacity: 0, width: 0 }}
         animate={{
           opacity: 1,
@@ -160,7 +210,7 @@ const TeachersList = () => {
       </motion.div>
 
       <motion.div
-        className={styles.img_5}
+        className={styles.img_1}
         initial={{ opacity: 0, width: 0 }}
         animate={{
           opacity: 1,
@@ -184,8 +234,7 @@ const TeachersList = () => {
         />
       </motion.div>
       <motion.div
-        // manne 1
-        className={styles.img_2}
+        className={styles.img_1}
         initial={{ opacity: 0, width: 0 }}
         animate={{
           opacity: 1,
@@ -207,7 +256,7 @@ const TeachersList = () => {
           }}
           priority
         />
-      </motion.div>
+      </motion.div> */}
     </div>
   );
 };
