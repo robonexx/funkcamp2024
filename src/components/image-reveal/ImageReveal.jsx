@@ -2,7 +2,6 @@ import React, { useRef, useEffect } from 'react';
 import Image from 'next/image';
 import { gsap, Power2 } from 'gsap';
 import styles from './imagereveal.module.scss';
-import ScrollIndicator from '../scrolldown/ScrollIndicator';
 
 const ImageReveal = ({ name, country, img }) => {
   console.log('ImageReveal props:', name, country, img);
@@ -74,7 +73,6 @@ const ImageReveal = ({ name, country, img }) => {
           )}
         </div>
       </div>
-      <ScrollIndicator />
     </div>
   );
 };

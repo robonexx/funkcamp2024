@@ -5,6 +5,7 @@ import Bio from '../../../components/bio/Bio';
 import PageLoader from '../../../components/page-loader/PageLoader';
 import ImageReveal from '../../../components/image-reveal/ImageReveal';
 import styles from './teacherPage.module.scss';
+import ScrollIndicator from '@/components/scrolldown/ScrollIndicator';
 
 const Teacher = () => {
   const [data, setData] = useState([]);
@@ -57,6 +58,9 @@ const Teacher = () => {
             })}
         </>
       )}
+      <div className={styles.scroll_wrapper}>
+      <ScrollIndicator />
+      </div>
     </div>
   );
 };
