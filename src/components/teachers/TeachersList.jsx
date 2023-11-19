@@ -20,7 +20,7 @@ const teacherData = [
     description:
       'Style and Grace - Attitude- Perfectionist, Stunts, Trix, Show stopping moves',
     image: Img1,
-    id: 1
+    id: 1,
   },
   {
     name: 'Willow Evann',
@@ -28,15 +28,14 @@ const teacherData = [
     description:
       'Pure Funk - Character - Grooves, Playfullness, Sooouuul brotha no.1',
     image: Img3,
-    id: 2
+    id: 2,
   },
   {
     name: 'Lady Charlock',
     title: 'Super Powers',
-    description:
-      'Style and Grace - Attitude - Maturity, Fierce, Powerful',
+    description: 'Style and Grace - Attitude - Maturity, Fierce, Powerful',
     image: Img4,
-    id: 3
+    id: 3,
   },
   {
     name: 'A-Train',
@@ -44,7 +43,7 @@ const teacherData = [
     description:
       'Pure Funk - Attitude - Unique, powerful, playfullness, perfectionism',
     image: Img5,
-    id: 4
+    id: 4,
   },
   {
     name: 'Funky Asparagus',
@@ -52,7 +51,7 @@ const teacherData = [
     description:
       'Character - Style and Grace - Flawless technique, precision, stunts, fundamentals',
     image: Img2,
-    id: 5
+    id: 5,
   },
 ];
 
@@ -88,7 +87,7 @@ const TeachersList = () => {
             title='Super Powers'
             description='Style and Grace - Attitude- Perfectionist, Stunts, Trix, Show stopping moves'
           >
-            P-Lock The Thunderman
+            <p>P-Lock The Thunderman</p>
           </ToolT>
         </div>
         <div className={styles.grid_item}>
@@ -96,7 +95,7 @@ const TeachersList = () => {
             title='Super Powers'
             description='Pure Funk - Character - Grooves, Playfullness, Sooouuul brotha no.1'
           >
-            Willow Evann
+            <p>Willow Evann</p>
           </ToolT>
         </div>
         <div className={styles.grid_item}>
@@ -104,7 +103,7 @@ const TeachersList = () => {
             title='Super Powers'
             description='Attitude - Style and Grace - Maturity, Fierce, Powerful impact on the scene'
           >
-            Charlie - Lady Charlock
+            <p>Charlie - Lady Charlock</p>
           </ToolT>
         </div>
         <div className={styles.grid_item}>
@@ -112,7 +111,7 @@ const TeachersList = () => {
             title='Super Powers'
             description='Pure Funk - Attitude - Unique, powerful, playfullness, perfectionism'
           >
-            Alex - A-train
+            <p>Alex - A-train</p>
           </ToolT>
         </div>
         <div className={styles.grid_item}>
@@ -120,21 +119,16 @@ const TeachersList = () => {
             title='Super Powers'
             description='Character - Style and Grace - Flawless technique, precision, stunts, fundamentals'
           >
-            Manne - Funky Asparagus
+            <p>Manne - Funky Asparagus</p>
           </ToolT>
         </div>
       </div>
       <motion.div className={styles.teachers_images}>
-        {teacherData.map(({id, image, name}) => (
-          <Teacher
-            key={id}
-            id={id}
-            name={name}
-            image={image}
-          />
+        {teacherData.map(({ id, image, name }) => (
+          <Teacher key={id} id={id} name={name} image={image} />
         ))}
       </motion.div>
-   {/*    <motion.div
+      {/*    <motion.div
         className={styles.img_1}
         initial={{
           opacity: 0,

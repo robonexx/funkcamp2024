@@ -55,7 +55,6 @@ const ToolT = ({ title, description, children, width = 256, space = 16 }) => {
       ref={el}
     >
       {children}
-
       {visible && (
         <MyPortal>
           <div className={`${styles['tooltip-body']}`} style={style}>

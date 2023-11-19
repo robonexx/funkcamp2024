@@ -93,7 +93,7 @@ const Hero = () => {
         }}
         transition={{ duration: 0.4, delay: 1, ease: 'easeInOut' }}
       >
-        <Link href={'/teacher/' + 2}></Link>
+        <Link href={'/teacher/' + 1}></Link>
         <Image
           className={styles.img}
           src={Img1}
@@ -120,7 +120,7 @@ const Hero = () => {
         transition={{ duration: 0.4, delay: 1.5, ease: 'easeInOut' }}
       >
         {' '}
-        <Link href={'/teacher/' + 1}></Link>
+        <Link href={'/teacher/' + 5}></Link>
         <Image
           className={styles.img}
           src={Img2}
@@ -146,7 +146,7 @@ const Hero = () => {
         }}
         transition={{ duration: 0.4, delay: 1.3, ease: 'easeInOut' }}
       >
-        <Link href={'/teacher/' + 4}></Link>
+        <Link href={'/teacher/' + 2}></Link>
         <Image
           className={styles.img}
           src={Img3}
@@ -196,7 +196,7 @@ const Hero = () => {
         }}
         transition={{ duration: 0.4, delay: 1.2, ease: 'easeInOut' }}
       >
-        <Link href={'/teacher/' + 5}></Link>
+        <Link href={'/teacher/' + 4}></Link>
         <Image
           className={styles.img}
           src={Img5}

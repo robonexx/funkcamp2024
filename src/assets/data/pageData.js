@@ -76,7 +76,7 @@ export const videoData = [
 
 export const teacherData = [
   {
-    id: 1,
+    id: 5,
     name: 'Manne Schutt',
     country: 'SWE',
     img: 'manne.jpeg',
@@ -85,7 +85,7 @@ export const teacherData = [
     desc: 'Manne is one of the first lockers in Sweden to have the fundamentals right. He was first, what many call self thought dancer, but later learned the artform of locking from the pioneers. He has been teaching locking for a long time now and he is well known on the scene. He has been in numerous productions, teaching at many of Swedens top schools and battled in numerous competitions. He has always been dedicated to locking and he has a lot to share with the community',
   },
   {
-    id: 2,
+    id: 1,
     name: 'P Lock',
     country: 'FR',
     img: 'plockparis.png',
@@ -103,7 +103,7 @@ export const teacherData = [
     desc: 'Charlie ”Lady-Charlock" Nelson Prag is one of the first female lockers in Sweden. She has a long background in dance and has been involved in the hiphop scene in a long time. She co founded the group  Moves Per Minute. Together with Freeze, JamOne, 2Easy and Prime She`s been taught by the pioneers of locking. Been a part of the locking group funkademics and Les Virtuoses de l`nstant together with P.lock, Hakim Hachouche, Jimmy Soul, Oskar ” Supreme” Pitre, Pascal and Nordine. Charlie was the head of streetdance at the School of Dance and Circus in Stockholm. She is currently freelancing as a producer, and artistic coach',
   },
   {
-    id: 4,
+    id: 2,
     name: 'Willow',
     country: 'FR',
     img: 'willow.png',
@@ -112,7 +112,7 @@ export const teacherData = [
     desc: 'From the earliest age Willow Evann felt the need to express himself through dance. Lulled as a child by the reggae his father listened to, he has been immersed in the Hip Hop culture since the age of 10. He then turned to Locking (a dance born in 1970 on the West Coast of the United States) and is considered today as an essential reference of this movement. At the same time, he developed his career as a photographer and focused his practice on capturing gesture and choreographic movement. In 2019, he joins the Kourtrajmé school where he experiments and develops his visual language. In 2020, he participates in the collective exhibition curated by the artist JR at the Centquatre and then in the Parcours Saint-Germain with a photographic installation in the public space. In 2022, 31 PROJECT exhibited his work in a duo show in its Parisian gallery.',
   },
   {
-    id: 5,
+    id: 4,
     name: 'A-train',
     country: 'SWE',
     img: 'alexander.jpg',
