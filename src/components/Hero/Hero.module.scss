@@ -313,7 +313,7 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: 100;
-  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.822));
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.822));
 
   a {
     text-decoration: none;
@@ -321,6 +321,7 @@
     color: #e3e3e3;
 
     > svg {
+      stroke-width: 1px;
       stroke: rgb(32, 32, 32);
       fill: rgb(255, 255, 255);
       animation: anim 3000ms ease-in-out infinite forwards;

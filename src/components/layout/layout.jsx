@@ -86,7 +86,7 @@ export default function Layout({ children }) {
         <main>{children}</main>
       </ScrollToTop>
       <Footer>
-        Link to{' '}
+      &copy; By Rob-One
         <Link
           href='https://fryshuset.se/verksamhet/danscenter'
           target='_blank'
@@ -94,7 +94,7 @@ export default function Layout({ children }) {
         >
           DANSCENTER
         </Link>{' '}
-        website
+        2024
       </Footer>
     </>
   );

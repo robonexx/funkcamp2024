@@ -58,7 +58,7 @@ const teacherData = [
 const TeachersList = () => {
   const desktop = useMediaQuery(768);
   return (
-    <div className={styles.teachers_wrapper} id='videos'>
+    <div className={styles.teachers_wrapper} id='teachers'>
       <motion.h1
         className={`${styles.teachers_title}`}
         initial={{ opacity: 0, x: -200 }}

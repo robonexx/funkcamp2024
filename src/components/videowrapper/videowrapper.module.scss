@@ -9,12 +9,13 @@
     align-items: center;
   
     h2 {
-      background-color: black;
+      background: linear-gradient(120deg, $color-2 ,$color-1);
       margin: 1rem auto;
       width: 90%;
       font-family: $font-headline;
       text-transform: uppercase;
-  
+      filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.524));
+      border-radius: 5px;
   
       @media screen and (min-width: 768px) {
         width: 60%;
@@ -26,7 +27,8 @@
       margin: 1rem 0;
       width: 90%;
       height: 40vh;
-  
+      filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.524));
+      border-radius: 5px;
   
       @media screen and (min-width: 768px) {
         width: 60%;

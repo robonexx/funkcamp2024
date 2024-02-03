@@ -3,26 +3,9 @@ import { useRouter } from 'next/router';
 import emailjs from '@emailjs/browser';
 import { motion } from 'framer-motion';
 import { FcCheckmark } from 'react-icons/fc';
-/* import Modal from '@/components/modal/Modal'; */
 
 // styles
 import styles from './Contact.module.scss';
-
-/* const ModalContent = ({ name }) => {
-  return (
-    <div
-      style={{
-        width: '80%',
-        margin: '3rem auto',
-        display: 'grid',
-        placeContent: 'center',
-      }}
-    >
-      <h2 style={{ color: 'white' }}>Thanks for signing up {name}</h2>
-      <p style={{ color: 'white' }}>We will email you more info shortly</p>
-    </div>
-  );
-}; */
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -33,12 +16,8 @@ const Contact = () => {
   });
   const [validationMessage, setValidationMessage] = useState('');
   const [isButtonDisabled, setIsButtonDisabled] = useState(false);
-  /*  const [modalOpen, setModalOpen] = useState(false); */
 
   const router = useRouter();
-
-  /*  const close = () => setModalOpen(false);
-  const open = () => setModalOpen(true); */
   const form = useRef();
 
   const onChangeHandler = (e) => {
@@ -79,7 +58,7 @@ const Contact = () => {
           }
         );
       setValidationMessage(
-        'Thanks you for getting in touch with funkcamp, we will answer you email shortly!'
+        'Thank you for getting in touch with funkcamp, we will answer your email shortly!'
       );
       resetForm();
       setTimeout(() => {
@@ -168,15 +147,6 @@ const Contact = () => {
         </div>
         <label>Subject</label>
         <div className={styles.input_field}>
-          {/* <input
-            type='text'
-            name='subject'
-            value={form.subject || ''} 
-          onChange={onChangeHandler}
-            minLength={5}
-            maxLength={30}
-            required
-          /> */}
           <select
             name='subject'
             value={form.subject}
@@ -214,18 +184,9 @@ const Contact = () => {
           style={{
             pointerEvents: isButtonDisabled ? 'none' : 'auto',
           }}
-          /* disabled={!isValid} */
-          /*  onClick={() => (modalOpen ? close() : open())} */
         />
         <div className={styles.message}>{validationMessage}</div>
       </motion.form>
-      {/* {modalOpen && (
-        <Modal
-          modalOpen={modalOpen}
-          handleClose={close}
-          content={<ModalContent name={form.from_name} />}
-        ></Modal>
-      )} */}
     </div>
   );
 };

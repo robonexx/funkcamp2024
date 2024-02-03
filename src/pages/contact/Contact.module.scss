@@ -12,6 +12,7 @@
     font-size: clamp(2rem, 4vw, 6rem);
     color: $color-1;
     text-transform: uppercase;
+    font-family: $font-headline;
 
     &:last-of-type {
       margin-bottom: 4rem;
@@ -25,6 +26,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    font-family: $font-base;
 
     &:valid input[type='submit'] {
       color: #8f8f8f;
@@ -91,10 +93,7 @@
       background-color: transparent;
       border: 1px solid #888;
       cursor: pointer;
-
-      /* &:hover {
-                    background-color: #ffa500;
-            } */
+      border-radius: 5px;
     }
 
     label {
@@ -139,7 +138,8 @@
       margin: 1rem auto;
       width: 60%;
       height: 20px;
-      font-size: 12px;
+      font-size: 1rem;
+      font-family: monospace;
 
       color: $color-white;
     }

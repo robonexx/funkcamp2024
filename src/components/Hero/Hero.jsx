@@ -217,7 +217,7 @@ const Hero = () => {
          opacity: 1}}
        transition={{ duration: 0.4, delay: 2.2, ease: 'easeInOut' }}
       >
-        <Link href='#videos' scroll={false}>
+        <Link href='#teachers' scroll={false}>
           <FiArrowDownCircle />
         </Link>
       </motion.div>

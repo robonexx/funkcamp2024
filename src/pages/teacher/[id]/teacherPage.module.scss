@@ -4,6 +4,16 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    padding: 2rem 0;
+
+    .btn_container {
+      position: fixed;
+      top: 10vh;
+      left: 5vw;
+      pointer-events: auto;
+      cursor: pointer;
+      z-index: 100;
+    }
 
     .scroll_wrapper {
         position: absolute;

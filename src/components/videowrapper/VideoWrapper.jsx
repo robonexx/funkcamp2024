@@ -5,7 +5,7 @@ import styles from './videowrapper.module.scss';
 const VideoWrapper = () => {
   return (
     <div className={styles.info}>
-      <h1>Check out the teachers in action!</h1>
+      <h1>Our ⭐'s  in action!</h1>
       <Video>
         {videoData.map(({ vid, vtime, id, name }) => (
           <div key={id}>

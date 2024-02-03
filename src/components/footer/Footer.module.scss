@@ -1,13 +1,15 @@
+@use '../../styles/base/' as *;
 .footer {
   padding: 0.5rem 0;
     position: relative;
     width: 100%;
     min-height: 8vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    color: #151515;
+    color: #F8f8f8;
+    font-family: $font-base;
 
     @media (min-width: 960px) {
       flex-direction: row;
@@ -21,6 +23,7 @@
       color: #ff6e40;
       border: 1px solid #888;
       font-weight: bolder;
+      border-radius: 5px;
 
      &:hover {
       transition: all 0.4s ease-in-out;

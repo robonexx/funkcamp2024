@@ -16,7 +16,7 @@
       h2 {
         margin-top: 2rem;
         font-size: clamp(3rem, 5vw, 8rem);
-        font-family: inherit;
+        font-family: $font-headline;
         font-weight: 700;
         color: $color-1;
         text-shadow: $txt-shadow;
@@ -25,7 +25,7 @@
       h4 {
         margin-top: 2rem;
         font-size: clamp(1rem, 1.2vw, 1.5rem);
-        font-family: inherit;
+        font-family: $font-base;
         font-weight: 300;
         color: $color-4;
       }
@@ -35,6 +35,7 @@
         margin: 4rem 0;      
         width: 100%;
         height: 500px;
+        border-radius: 5px;
 
         @media(min-width: 768px) {
           max-width: 800px;
@@ -46,13 +47,15 @@
         width: 100%;
         height: 100%;      
         object-fit: cover; 
-        object-position: center;  
+        object-position: center; 
+        border-radius: 5px;
+        filter: drop-shadow(5px 5px 10px rgba(0,0,0, .425)); 
     }
     p {
         margin: 2rem auto 0;
         padding: 0.25rem 0.5rem;
         color: rgba(255, 255, 255, 0.987);
-        font-family: inherit;
+        font-family: $font-base;
         font-size: $font-size-m;
         font-weight: 100;
         letter-spacing: 1px;
@@ -60,7 +63,11 @@
         text-shadow: 1px 1px black;
         text-align: left;
 
-        :last-child {
+        &:first-of-type {
+          color: $color-1;
+        }
+
+        &:last-child {
             margin-bottom: 2rem;
         }
     }

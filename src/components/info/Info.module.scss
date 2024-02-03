@@ -18,6 +18,11 @@
         color: $color-1;
       }
 
+      .name {
+        font-size: clamp(2rem, 5vw, 6rem);
+        color: #ff4040;
+        filter: drop-shadow(5px 5px 10px black);
+      }
       
       h4 {
         margin-top: 1rem;
@@ -62,6 +67,7 @@
         list-style: none;
         border: 1px solid white;
         text-align: left;
+        border-radius: 5px;
   
       &:hover {
         cursor: pointer;

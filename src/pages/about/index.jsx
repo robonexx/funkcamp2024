@@ -41,22 +41,32 @@ const About = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1, delay: 1 }}
       >
-        From The Start ⚡️!{' '}
+        How it all began ⚡️{' '} & continues
       </motion.h2>
       <motion.p
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1.6, delay: 1.6 }}
       >
-        Funkcamp 2005 ✨ First ever dance camp dedicated to locking in Sweden and Europe.
+        Funkcamp 2005 ✨ First ever dance camp dedicated to locking in Sweden
+        and Europe.
         <br />
-        From there the rest is history, we are now coming in to our 20th anniversay in 2024.
+        From there the rest is history, we are now coming in to our 20th
+        anniversay in 2024.
         <br />
-        Original idea to camp was from me working on a kids show for UR utbildnings radion in Sweden, I was the producer of that show and was asked to have my students teach different "street styles", me asking the organisation to get hold of Don Campbell (who sadly never responded), OG Skeeter Rabbit, Greg Campbellock Jr for me.
+        Original idea to camp was from me working on a kids show for UR
+        utbildnings radion in Sweden, I was the producer of that show and was
+        asked to have my students teach different "street styles", me asking the
+        organisation to get hold of Don Campbell (who sadly never responded), OG
+        Skeeter Rabbit, Greg Campbellock Jr for me.
         <br />
-        We (me and Skeeter) had a few emails sent back and forth, I asked him to come and teach the foundation and history in Sweden, he said shure and said he connect me with Greg.
+        We (me and Skeeter) had a few emails sent back and forth, I asked him to
+        come and teach the foundation and history in Sweden, he said shure and
+        said he connect me with Greg.
         <br />
-        With the help of OG Skeeter Rabbit & Greg Campbellock Jr, we put the ideas together and set the plans in motion for what was to become FUNKCAMP (sweden)
+        With the help of OG Skeeter Rabbit & Greg Campbellock Jr, we put the
+        ideas together and set the plans in motion for what was to become
+        FUNKCAMP (sweden)
         <br />
       </motion.p>
       <p>
@@ -67,24 +77,59 @@ const About = () => {
         the top dancers in the world.
         <br />
         The camp has always had 3 pioneers with roots to the Locking community,
-        the clubs, soul train and yes GOGO Brothers family. Many have been
-        supporting the camp for years now, but without these 3 pillars, OG
-        Skeeter Rabbit, TONY GOGO and Campbellock JR, This camp would have not
-        existed. So Im deeply honered and humbled by the help, continued support
-        and the brother hood you have shown us.
+        the clubs, soul train and yes{' '}
+        <span style={{ color: '#ea781a' }}>GOGO Brothers</span>. <br /> Many
+        have been supporting the camp for years now, but without these 3
+        pillars,{' '}
+        <span style={{ color: '#ea781a' }}>
+          {' '}
+          OG Skeeter Rabbit, TONY GOGO and Campbellock JR (R.I.P)
+        </span>
+        , This camp would have not existed. <br /> So Im deeply honered and
+        humbled by the help, continued support and the brother hood you have
+        shown us.
         <br />
         <br />
-        Other people who helped me from the start has been Manne Schutt and Amine Baraka, they where always helping out and fixing around the camp. A-train was also helping out with the camp when he was still a teenager. Funky 4 brothers was always supportive and helped alot. Also some other pioneers has been involved in several camps, such as Damon Frost, Patrik "PRIME" Helge.  
+        Other people who helped me from the start has been{' '}
+        <span style={{ color: '#ea781a' }}> Manne Schutt and Amine Baraka</span>
+        , they where always helping out and fixing around the camp.{' '}
+        <span style={{ color: '#ea781a' }}>Funky 4 brothers</span> was always
+        supportive and helped alot ... <br />
+        Also some other pioneers has been involved in several camps, such as
+        <span style={{ color: '#ea781a' }}>
+          {' '}
+          Damon Frost, Patrik "PRIME" Helge
+        </span>{' '}
+        .
         <br />
-        We had the honor to have Loose Caboose, Lock Smith, Anthony Edwards come teach at the camp too. And our brother Willow has been playing a mayor part of the camp the past years.
+        We had the honor to have{' '}
+        <span style={{ color: '#ea781a' }}>
+          {' '}
+          Loose Caboose, Lock Smith, Anthony Edwards
+        </span>{' '}
+        come teach at the camp too. And our brother{' '}
+        <span style={{ color: '#ea781a' }}> Willow</span> has been playing a
+        mayor part of the camp the past years.
         <br />
         <br />
-        And we have had the honor to keep having the assosiasion and collaboration with Danscenter stockholm and now Danscenter Fryshuset were the school continues to live its legacy. This is also the venue for Funkcamp 2024. 
+        And we have had the honor to keep having the assosiasion and
+        collaboration with{' '}
+        <span style={{ color: '#ea781a' }}> Danscenter stockholm</span> and now
+        under the roof of <span style={{ color: '#ea781a' }}> Fryshuset </span>
+        were the school continues to live its legacy. This is also the venue for
+        Funkcamp 2024.
         <br />
         <br />
-        We wanna thank all of you who has come to the camps. Connecting with lockers from around the world and have direct conversations and teachings from our finest lockers and pioneers of locking. Our guest teachers who is a pillar holding high level at the camp and teaching their passion with us. 
-        <br /><br /> 
-        We hope to see you at the next camp in 2024 & we already started planing an upcoming camp with some great guests that never visited us before. :D
+        We wanna thank all of you who has come to the camps. Connecting with
+        lockers from around the world and have direct conversations and
+        teachings from our finest lockers and pioneers of locking. Our guest
+        teachers who is a pillar holding high level at the camp and teaching
+        their passion with us.
+        <br />
+        <br />
+        We hope to see you at the next camp in 2024 & we already started
+        planning an upcoming camp in 2025 with some great guests that never
+        visited us before. 🎉
       </p>
     </div>
   );

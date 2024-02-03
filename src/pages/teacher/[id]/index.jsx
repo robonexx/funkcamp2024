@@ -6,6 +6,9 @@ import PageLoader from '../../../components/page-loader/PageLoader';
 import ImageReveal from '../../../components/image-reveal/ImageReveal';
 import styles from './teacherPage.module.scss';
 import ScrollIndicator from '@/components/scrolldown/ScrollIndicator';
+import { useRouter } from 'next/navigation';
+import Button from '@/components/button/Button';
+import { motion } from 'framer-motion';
 
 const Teacher = () => {
   const [data, setData] = useState([]);
@@ -13,6 +16,8 @@ const Teacher = () => {
 
   const pathname = usePathname();
   const id = pathname ? pathname.replace('/teacher/', '') : '';
+
+  const router = useRouter();
 
   useEffect(() => {
     // Simulate an asynchronous data fetch
@@ -33,6 +38,15 @@ const Teacher = () => {
 
   return (
     <div className={styles.teacher}>
+      <motion.div
+        className={styles.btn_container}
+        onClick={() => router.push('/')}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.4, delay: 3 }}
+      >
+        <Button title='Go Back'></Button>
+      </motion.div>
       {!loading && (
         <>
           {data &&
@@ -59,7 +73,7 @@ const Teacher = () => {
         </>
       )}
       <div className={styles.scroll_wrapper}>
-      <ScrollIndicator />
+        <ScrollIndicator />
       </div>
     </div>
   );
