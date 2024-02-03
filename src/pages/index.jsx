@@ -43,15 +43,6 @@ export default function Home() {
 
         <div className={styles.sponsors}>
           <h2>In collaboration with</h2>
-         {/*  <div className={styles.img}>
-            <Image
-              className={styles.img}
-              src={S1}
-              alt='gatuverket'
-              fill
-              priority
-            />
-          </div> */}
           <Image
             src={S2}
             alt='danscenter'
@@ -59,7 +50,6 @@ export default function Home() {
             height='auto'
             priority
           />
-          {/*  <h2>The DanceSpot</h2> */}
         </div>
       </main>
     </>

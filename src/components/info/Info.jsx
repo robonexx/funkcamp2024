@@ -11,14 +11,18 @@ const Info = () => {
   return (
     <div className={styles.bio}>
       <h2>FUNKCAMP</h2>
-      <h2>2024 <span style={{fontSize: '0.75rem'}}>1st - 3rd of march</span></h2>
+      <h2>
+        <span>1st - 3rd of march</span> 2024
+      </h2>
 
       <br />
       {/*  <Image src={IMGBIO} alt='funkcamp' width={'100%'} height={'auto'} /> */}
       <div className={styles.adress}>
         <h4>MAIN VENUE!</h4>
-        <h2 className={styles.name}>DANSCENTER <span style={{fontSize: '1.25rem', color: '#f8f8f8'}}>Fryshuset</span></h2>
-        <p>DANSSTUDIO (for the studio number check back later)</p>
+        <h2 className={styles.name}>
+          DANSCENTER <span>Fryshuset</span>
+        </h2>
+        <p>Studio 1 or 2 (info coming soon)</p>
         <h4 style={{ textAlign: 'left', marginTop: '2rem' }}>
           Adress for venue:
         </h4>
@@ -50,12 +54,14 @@ const Info = () => {
         <br />
       </div>
       <br />
-      <p className={styles.schedulestart}>Here is a pre- schedule, changes might happen so be on the look out</p>
+      <p className={styles.schedulestart}>
+        Here is a pre- schedule, changes might happen so be on the look out
+      </p>
       <h3 /* style={{ textDecoration: 'line-through' }} */>
         Friday: At Danscenter{' '}
       </h3>
       {/*  <p style={{ color: 'tomato' }}>Done did with it</p> */}
-      <p>1 st of march</p>
+      <p className={styles.date}>1 st of march</p>
       <ul>
         <li>17.30 Welcome and registration - Danscenter</li>
         <li>18.00-21.00 Teachers announced soon</li>
@@ -66,7 +72,7 @@ const Info = () => {
         Saturday: At Dancer
       </h3>
       {/* <p style={{ color: 'tomato' }}>Done did with it</p> */}
-      <p>2nd of march</p>
+      <p className={styles.date}>2nd of march</p>
       <ul>
         <li>11.00-12.15 Workshop with Charlie</li>
         <li>13.30 - 14.45 Workshop with Manne</li>
@@ -77,7 +83,7 @@ const Info = () => {
         Sunday: At danscenter
       </h3>
       {/*  <p style={{ color: 'tomato' }}>Done did with it</p> */}
-      <p>3rd of march</p>
+      <p className={styles.date}>3rd of march</p>
       <ul>
         <li>11.00 - 14.00 Warm up + Willow - Manne</li>
         <li>14.00-15.00 Break</li>

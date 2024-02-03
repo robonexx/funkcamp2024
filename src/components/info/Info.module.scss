@@ -2,7 +2,8 @@
 
 .bio {
         margin: 5vh auto 5vh;
-        width: 90%;
+        width: 100%;
+        padding: 0;
         min-height: 100vh;
         position: relative;
         z-index: 1;
@@ -13,15 +14,24 @@
 
       h2 {
         margin-top: 2rem;
-        font-size: clamp(2rem, 5vw, 6rem);
+        font-size: $font-size-xxl;
         letter-spacing: 2px;
         color: $color-1;
+        filter: drop-shadow(5px 5px 10px rgba(0,0,0,.335));
+
+        &:nth-child(2) {
+          font-size: $font-size-xl;
+        }
+
+        > span {
+          font-size: $font-size-l;
+        }
       }
 
+
       .name {
-        font-size: clamp(2rem, 5vw, 6rem);
-        color: #ff4040;
-        filter: drop-shadow(5px 5px 10px black);
+       font-size: clamp(2rem, 5vw, 6rem);
+       filter: drop-shadow(5px 5px 10px rgba(0,0,0,.335));
       }
       
       h4 {
@@ -33,10 +43,10 @@
     }
 
     h3 {
-      padding: 2rem 0;
-      font-size: clamp(2rem, 3vw, 4rem);
+      padding: 1rem 0;
       color: #ffa900;
       text-transform: uppercase;
+      text-align: left;
     }
 
       img {
@@ -63,11 +73,15 @@
 
       a {
         color: #ff6e40;
-        padding: 1rem 0.5rem;
+        padding: 1rem 1.5rem;
         list-style: none;
         border: 1px solid white;
         text-align: left;
         border-radius: 5px;
+        @media(max-width: 768px) {
+          margin: 0 auto;
+          width: 100%;
+      }
   
       &:hover {
         cursor: pointer;
@@ -83,10 +97,14 @@
       padding: 1rem 0;
     }
 
+
     ul {
       margin: 1.5rem 0;
       border-top: 1px solid #888;
       border-bottom: 1px solid #888;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
 
       &:last-of-type {
         margin-bottom: 10rem;
@@ -94,7 +112,7 @@
 
       li {
         padding: 1rem 0.5rem;
-        list-style: none;
+        list-style: circle;
         color: white;
       }
 
@@ -126,5 +144,11 @@
         :last-of-type {
             margin-bottom: 10vh;
         }
+    }
+
+    .date {
+      color: $color-1;
+      font-family: $font-headline;
+      font-weight: 800;
     }
 }
