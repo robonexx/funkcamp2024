@@ -90,7 +90,7 @@ const Hero = () => {
           width: desktop ? '80vw' : '40vw',
           height: desktop ? '40vh' : '40vh',
         }}
-        transition={{ duration: 0.4, delay: 1, ease: 'easeInOut' }}
+        transition={{ duration: 0.4, delay: 0.6, ease: 'easeInOut' }}
       >
         <Link href={'/teacher/' + 1}></Link>
         <Image
@@ -103,7 +103,7 @@ const Hero = () => {
             objectPosition: 'top center',
             zIndex: '-1',
           }}
-          priority
+          loading='lazy'
         />
       </motion.div>
 
@@ -116,7 +116,7 @@ const Hero = () => {
           width: desktop ? '40vw' : '25vw',
           height: desktop ? '50vh' : '40vh',
         }}
-        transition={{ duration: 0.4, delay: 1.5, ease: 'easeInOut' }}
+        transition={{ duration: 0.4, delay: 1, ease: 'easeInOut' }}
       >
         {' '}
         <Link href={'/teacher/' + 5}></Link>
@@ -130,7 +130,7 @@ const Hero = () => {
             objectPosition: 'top center',
             zIndex: '1',
           }}
-          priority
+          loading='lazy'
         />
       </motion.div>
 
@@ -143,7 +143,7 @@ const Hero = () => {
           width: desktop ? '60vw' : '40vw',
           height: desktop ? '30vh' : '40vh',
         }}
-        transition={{ duration: 0.4, delay: 1.3, ease: 'easeInOut' }}
+        transition={{ duration: 0.4, delay: 0.8, ease: 'easeInOut' }}
       >
         <Link href={'/teacher/' + 2}></Link>
         <Image
@@ -156,7 +156,7 @@ const Hero = () => {
             objectPosition: 'top center',
             zIndex: '-1',
           }}
-          priority
+          loading='lazy'
         />
       </motion.div>
 
@@ -168,7 +168,7 @@ const Hero = () => {
           width: desktop ? '100vw' : '100vw',
           height: desktop ? '100vh' : '100vh',
         }}
-        transition={{ duration: 1.2, delay: 0.8, ease: 'easeInOut' }}
+        transition={{ duration: 0.2, delay: 0.6, ease: 'easeInOut' }}
       >
         <Link href={'/teacher/' + 3}></Link>
         <Image
@@ -214,7 +214,7 @@ const Hero = () => {
        initial={{ opacity: 0 }}
        animate={{
          opacity: 1}}
-       transition={{ duration: 0.4, delay: 2.2, ease: 'easeInOut' }}
+       transition={{ duration: 0.6, delay: 1.6, ease: 'easeInOut' }}
       >
         <Link href='#teachers' scroll={false}>
           <FiArrowDownCircle />
