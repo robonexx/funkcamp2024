@@ -6,15 +6,14 @@ import { motion } from 'framer-motion';
 import { FiArrowDownCircle } from 'react-icons/fi';
 
 // images
-import Img1 from '/public/images/plock.jpg';
-import Img2 from '/public/images/manne.jpg';
-import Img3 from '/public/images/willowparis.jpg';
-import Img4 from '/public/images/charlie.jpg';
+import Img1 from '/public/images/plock.webp';
+import Img2 from '/public/images/manne.webp';
+import Img3 from '/public/images/willowparis.webp';
+import Img4 from '/public/images/charlie.webp';
 import Img5 from '/public/images/atrain-fc24.png';
 
 // styles
 import styles from './Hero.module.scss';
-import Button from '../button/Button';
 import LinkBtn from '../button/LinkBtn';
 
 const Hero = () => {

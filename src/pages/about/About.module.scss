@@ -8,9 +8,12 @@
         z-index: 1;
       
         @media(min-width: 768px) {
-          width: 60svw;
-         
+          width: 60svw;         
           margin-top: 0;
+      }
+
+      :first-child {
+        font-weight: 600;
       }
 
       h2 {
@@ -34,21 +37,21 @@
         position: relative;
         margin: 4rem 0;      
         width: 100%;
-        height: 500px;
-        border-radius: 5px;
+        height: 280px;
 
         @media(min-width: 768px) {
           max-width: 800px;
+          height: 480px;
         
       }
     }
+
       .img {
-        position: absolute;       
+        position: relative;       
         width: 100%;
         height: 100%;      
         object-fit: cover; 
         object-position: center; 
-        border-radius: 5px;
         filter: drop-shadow(5px 5px 10px rgba(0,0,0, .425)); 
     }
     p {

@@ -1,8 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
-import IMGBIO from '/public/images/funkcamp_insta.jpg';
-import DANCE from '/public/images/thedancespot.png';
 
 // styles
 import styles from './Info.module.scss';

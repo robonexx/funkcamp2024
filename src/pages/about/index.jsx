@@ -14,7 +14,7 @@ const About = () => {
         animate={{ opacity: 1, x: 0, y: 40 }}
         transition={{ duration: 1.6, delay: 1 }}
       >
-        Founder of the funkcamp...
+        Founders of the funkcamp...
       </motion.p>
       <motion.div
         className={styles.img_wrapper}
