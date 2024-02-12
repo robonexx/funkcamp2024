@@ -21,15 +21,17 @@ const Hero = () => {
 
   return (
     <motion.div className={styles.hero}>
-      <motion.div className={styles.hero_btn_wrapper}
-      initial={{ opacity: 0, x: 400 }}
-      animate={{
-        opacity: 1,
-        x: 0,
-      }}
-      transition={{ duration: 0.6, delay: 3, ease: 'easeInOut' }}
+      <motion.div
+        className={styles.hero_btn_wrapper}
+        initial={{ opacity: 0, y: 300 }}
+        animate={{
+          opacity: 1,
+          y: 0,
+        }}
+        transition={{ duration: 0.6, delay: 3, ease: 'easeInOut' }}
       >
-        <LinkBtn title='Register' link='/contact'/>
+        <Link href='#info' className={styles.link}>Info</Link>
+        <LinkBtn title='Register' link='/contact' />
       </motion.div>
       <motion.p
         className={styles.hero_subtitle}
@@ -162,7 +164,7 @@ const Hero = () => {
 
       <motion.div
         className={styles.img_4}
-        initial={{ opacity: 0, width: '100vw', height: '100vh'}}
+        initial={{ opacity: 0, width: '100vw', height: '100vh' }}
         animate={{
           opacity: 1,
           width: desktop ? '100vw' : '100vw',
@@ -210,11 +212,13 @@ const Hero = () => {
         />
       </motion.div>
 
-      <motion.div className={styles.icon}
-       initial={{ opacity: 0 }}
-       animate={{
-         opacity: 1}}
-       transition={{ duration: 0.6, delay: 1.6, ease: 'easeInOut' }}
+      <motion.div
+        className={styles.icon}
+        initial={{ opacity: 0 }}
+        animate={{
+          opacity: 1,
+        }}
+        transition={{ duration: 0.6, delay: 1.6, ease: 'easeInOut' }}
       >
         <Link href='#teachers' scroll={false}>
           <FiArrowDownCircle />

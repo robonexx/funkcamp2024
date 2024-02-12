@@ -15,17 +15,48 @@
 }
 
 .hero_btn_wrapper {
-  width: 200px;
+  width: 100%;
   position: absolute;
- right: 5vw;
- transform: translateX(-50%);
   bottom: 10vh;
   z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-family: $font-base;
 
   @media (min-width: 768px) {
-    top: 20vh;
+    width: fit-content;
+    top: 15vh;
     left: auto;
+    justify-content: unset;
+    align-items: unset;
+    display: flex;
     right: 8.25vw;
+  }
+
+  .link {
+    position: relative;
+    width: fit-content;
+    width: 160px;
+    height: fit-content;
+    padding: 1rem 2rem;
+    display: grid;
+    place-content: center;
+    color: $color-white;
+    background-color: $color-card-bg;
+    border: 1px solid $color-2;
+    transition: all 0.4s ease-in-out;
+    border-radius: 5px;
+    pointer-events: auto;
+    cursor: pointer;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $color-2;
+      border: 1px solid $color-1;
+      color: white;
+    }
   }
 }
 
@@ -154,7 +185,7 @@
   &:hover {
     filter: grayscale(0.25);
     cursor: pointer;
-  /*   border: 1px solid #888; */
+    /*   border: 1px solid #888; */
 
     > img {
       transform: scale(1.1);

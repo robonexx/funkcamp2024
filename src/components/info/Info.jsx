@@ -6,7 +6,7 @@ import styles from './Info.module.scss';
 
 const Info = () => {
   return (
-    <div className={styles.bio}>
+    <div className={styles.bio} id='info'>
       <h2>FUNKCAMP</h2>
       <h2>
         <span>1st - 3rd of march</span> 2024
