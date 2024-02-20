@@ -62,9 +62,8 @@ const Info = () => {
       <ul>
         <li>17.30 Welcome and registration - Danscenter</li>
         <li>18.00 Teacher: Willow</li>
-        <li>More info coming...</li>
-       {/*  <li>19.00 Teacher: RobOne</li>
-        <li>20.00 Teacher: Funky Asparagus</li> */}
+        <li>19.00 Teacher: RobOne</li>
+        <li>20.00 Teacher: Funky Asparagus</li>
         <li>21.00 doors close</li>
         <li>Rest for saturday</li>
       </ul>
@@ -75,7 +74,7 @@ const Info = () => {
       <p className={styles.date}>2nd of march</p>
       <ul>
         <li>11.00-12.20(30) Teacher: Lady Charlock</li>
-        <li>13.30 - 14.50(15.00) Teacher:</li>
+        <li>12.30 - 13.50(14.00) Teacher: A-Train</li>
         <li>15.00 - 17.00 Teacher: P-Lock</li>
         <li>More info coming soon... about saturday</li>
       </ul>
