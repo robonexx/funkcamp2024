@@ -290,9 +290,8 @@
     20px 20px 20px rgba(0, 0, 0, 0.171);
   filter: grayscale(1);
   transition: all 0.4s ease-in-out;
-  width: 100svw;
+  width: 100vw;
   height: 100svh;
-  
 
   &:hover {
     filter: grayscale(0.25);
@@ -308,6 +307,12 @@
     left: 0;
     width: 100%;
     height: 100%;
+  }
+
+  > img {
+    transition: all 0.4s ease-in-out;
+    object-fit: cover;
+    object-position: 60% 20%;
   }
 }
 

@@ -61,7 +61,9 @@ const Info = () => {
       <p className={styles.date}>1 st of march</p>
       <ul>
         <li>17.30 Welcome and registration - Danscenter</li>
-        <li>18.00-21.00 Teachers announced soon</li>
+        <li>18.00 Teacher: Willow</li>
+       {/*  <li>19.00 Teacher: RobOne</li>
+        <li>20.00 Teacher: Funky Asparagus</li> */}
         <li>21.00 doors close</li>
         <li>Rest for saturday</li>
       </ul>
@@ -71,9 +73,9 @@ const Info = () => {
       {/* <p style={{ color: 'tomato' }}>Done did with it</p> */}
       <p className={styles.date}>2nd of march</p>
       <ul>
-        <li>11.00-12.15 Workshop with Charlie</li>
-        <li>13.30 - 14.45 Workshop with Manne</li>
-        <li>15.00 - 17.00 Workshop with P.Lock</li>
+        <li>11.00-12.20(30) Teacher: Lady Charlock</li>
+        <li>13.30 - 14.50(15.00) Teacher:</li>
+        <li>15.00 - 17.00 Teacher: P-Lock</li>
         <li>More info coming soon... about saturday</li>
       </ul>
       <h3 /* style={{ textDecoration: 'line-through' }} */>
@@ -82,10 +84,10 @@ const Info = () => {
       {/*  <p style={{ color: 'tomato' }}>Done did with it</p> */}
       <p className={styles.date}>3rd of march</p>
       <ul>
-        <li>11.00 - 14.00 Warm up + Willow - Manne</li>
+        <li>11.00 - 12.30 Teacher: Willow</li>
+        <li>12.30 - 15.00 Teacher: Funky Asparagus</li>
         <li>14.00-15.00 Break</li>
-        <li>15.00-17.00 P.Lock</li>
-        <li>17.20 - Q & As </li>
+        <li>15.00-17.00 Teacher: P-Lock</li>
         <li>THE END</li>
       </ul>
     </div>

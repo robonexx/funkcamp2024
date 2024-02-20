@@ -161,11 +161,6 @@ const Hero = () => {
           src={Img4}
           alt='charlie'
           fill
-          style={{
-            objectFit: 'cover',
-            objectPosition: desktop ? '60%' : 'center',
-            zIndex: '-1',
-          }}
           priority
         />
       </motion.div>

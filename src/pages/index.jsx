@@ -9,7 +9,6 @@ import Videos from '@/components/videowrapper/VideoWrapper';
 import TeachersList from '@/components/teachers/TeachersList';
 
 export default function Home() {
-
   return (
     <>
       <Head>
@@ -20,8 +19,6 @@ export default function Home() {
       </Head>
       <main className={styles.home}>
         <Hero />
-        <TeachersList />
-        <Videos />
         <div className={styles.intro}>
           {/* <h2>Thank you everyone!</h2>
           <p>
@@ -40,6 +37,8 @@ export default function Home() {
           </div>
           <h4>To contact us check contact page</h4>
         </div>
+        <TeachersList />
+        <Videos />
 
         <div className={styles.sponsors}>
           <h2>In collaboration with</h2>
