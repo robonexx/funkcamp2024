@@ -75,6 +75,7 @@ const Info = () => {
       <ul>
         <li>11.00-12.30 Teacher: Lady Charlock</li>
         <li>12.30 - 14.00 Teacher: A-Train</li>
+        <li>14.00-15.00 Break</li>
         <li>15.00 - 17.00 Teacher: P-Lock</li>
         <li>More info coming soon... about saturday</li>
       </ul>
