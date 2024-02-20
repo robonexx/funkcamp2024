@@ -62,6 +62,7 @@ const Info = () => {
       <ul>
         <li>17.30 Welcome and registration - Danscenter</li>
         <li>18.00 Teacher: Willow</li>
+        <li>More info coming...</li>
        {/*  <li>19.00 Teacher: RobOne</li>
         <li>20.00 Teacher: Funky Asparagus</li> */}
         <li>21.00 doors close</li>
