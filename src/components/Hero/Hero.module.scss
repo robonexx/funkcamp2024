@@ -60,28 +60,6 @@
   }
 }
 
-/* .text {
-  width: 100%;
-  position: absolute;
-  top: 0vh;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-  -ms-transform: translate(-50%);
-  transform: translate(-50%);
-  color: $color-3;
-  text-shadow: 1px 1px black;
-  z-index: 10;
-
-  @media (min-width: 768px) {
-    width: 80%;
-    top: 25vh;
-    left: 25vw;
-    -webkit-transform: translate(-50%);
-    -ms-transform: translate(-50%);
-    transform: translate(-50%);
-  }
-} */
-
 .hero_subtitle {
   position: relative;
   text-transform: uppercase;
@@ -163,23 +141,32 @@
   position: absolute;
   top: 55vh;
   bottom: 0;
-  left: 30vw;
+  left: auto;
   right: 0;
   overflow: hidden;
   box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.534),
     20px 20px 20px rgba(0, 0, 0, 0.171);
   filter: grayscale(1);
   transition: all 0.4s ease-in-out;
+  width: 60vw;
+  height: 40vh;
+  opacity: 1;
+  z-index: 20;
 
   > img {
     transition: all 0.4s ease-in-out;
+    object-fit: cover;
+    object-position: top center;
   }
 
   @media screen and (min-width: 768px) {
-    top: 45vh;
-    left: 40vw;
+    top: auto;
+    left: 45vw;
+    bottom: 0;
     right: auto;
     transform: translate(-50%);
+    width: 30vw;
+    height: 50vh;
   }
 
   &:hover {
@@ -189,6 +176,7 @@
 
     > img {
       transform: scale(1.1);
+     
     }
   }
   > a {
@@ -212,15 +200,21 @@
     20px 20px 20px rgba(0, 0, 0, 0.171);
   filter: grayscale(1);
   transition: all 0.4s ease-in-out;
+   width: 50vw;
+  height: 40vh;
 
   > img {
     transition: all 0.4s ease-in-out;
+    object-fit: cover;
+    object-position: top center;
   }
 
   @media (min-width: 768px) {
-    top: 10svh;
-    left: 5vw;
+    top: 0svh;
+    left: 0vw;
     right: auto;
+    width: 30vw;
+    height: 50vh;
   }
 
   &:hover {
@@ -243,6 +237,8 @@
 
 .img_3 {
   position: absolute;
+  width: 50svw;
+  height: 30svh;
   top: 35vh;
   left: -5vw;
   z-index: 10;
@@ -254,9 +250,18 @@
   transition: all 0.4s ease-in-out;
 
   @media (min-width: 768px) {
-    right: 2rem;
+    right: 0;
     left: auto;
     top: 60vh;
+    bottom: 0;
+    width: 40vw;
+    height: 40vh;
+  }
+
+  > img {
+    transition: all 0.4s ease-in-out;
+    object-fit: cover;
+    object-position: top center;
   }
 
   &:hover {
@@ -285,6 +290,9 @@
     20px 20px 20px rgba(0, 0, 0, 0.171);
   filter: grayscale(1);
   transition: all 0.4s ease-in-out;
+  width: 100svw;
+  height: 100svh;
+  
 
   &:hover {
     filter: grayscale(0.25);
@@ -306,20 +314,27 @@
 .img_5 {
   position: absolute;
   top: auto;
-  left: 5vw;
-  z-index: 20;
-  bottom: 0;
+  left: -5vw;
+  z-index: 30;
+  bottom: 0vh;
   overflow: hidden;
   box-shadow: 0 10px 10px -3px #00000057, -5px 0 5px -5px #00000030;
   filter: grayscale(1);
-  object-fit: cover;
-  object-position: center top;
+ width: 60svw;
+ height: 40svh;
   transition: all 0.4s ease-in-out;
 
+  >img {
+    object-fit: cover;
+    object-position: center top;
+  }
+
   @media (min-width: 768px) {
-    left: 2rem;
-    bottom: 10vh;
+    left: 0;
+    bottom: 5vh;
     top: auto;
+    height: 55vh;
+    width: 30svw;
   }
 
   &:hover {
@@ -343,7 +358,7 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 100;
+  z-index: 1000;
   filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.822));
 
   a {

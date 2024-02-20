@@ -85,12 +85,9 @@ const Hero = () => {
         className={styles.img_1}
         initial={{
           opacity: 0,
-          width: 0,
         }}
         animate={{
           opacity: 1,
-          width: desktop ? '80vw' : '40vw',
-          height: desktop ? '40vh' : '40vh',
         }}
         transition={{ duration: 0.4, delay: 0.6, ease: 'easeInOut' }}
       >
@@ -100,11 +97,6 @@ const Hero = () => {
           src={Img1}
           alt='patrick'
           fill
-          style={{
-            objectFit: 'cover',
-            objectPosition: 'top center',
-            zIndex: '-1',
-          }}
           loading='lazy'
         />
       </motion.div>
@@ -112,11 +104,10 @@ const Hero = () => {
       <motion.div
         // manne 1
         className={styles.img_2}
-        initial={{ opacity: 0, width: 0 }}
+        initial={{ opacity: 0 }}
         animate={{
           opacity: 1,
-          width: desktop ? '40vw' : '25vw',
-          height: desktop ? '50vh' : '40vh',
+
         }}
         transition={{ duration: 0.4, delay: 1, ease: 'easeInOut' }}
       >
@@ -127,11 +118,6 @@ const Hero = () => {
           src={Img2}
           alt='manny'
           fill
-          style={{
-            objectFit: 'cover',
-            objectPosition: 'top center',
-            zIndex: '1',
-          }}
           loading='lazy'
         />
       </motion.div>
@@ -139,11 +125,9 @@ const Hero = () => {
       <motion.div
         // willow 4
         className={styles.img_3}
-        initial={{ opacity: 0, width: 0 }}
+        initial={{ opacity: 0}}
         animate={{
           opacity: 1,
-          width: desktop ? '60vw' : '40vw',
-          height: desktop ? '30vh' : '40vh',
         }}
         transition={{ duration: 0.4, delay: 0.8, ease: 'easeInOut' }}
       >
@@ -164,11 +148,10 @@ const Hero = () => {
 
       <motion.div
         className={styles.img_4}
-        initial={{ opacity: 0, width: '100vw', height: '100vh' }}
+        initial={{ opacity: 0}}
         animate={{
           opacity: 1,
-          width: desktop ? '100vw' : '100vw',
-          height: desktop ? '100vh' : '100vh',
+        
         }}
         transition={{ duration: 0.2, delay: 0.6, ease: 'easeInOut' }}
       >
@@ -189,11 +172,9 @@ const Hero = () => {
 
       <motion.div
         className={styles.img_5}
-        initial={{ opacity: 0, width: 0 }}
+        initial={{ opacity: 0 }}
         animate={{
           opacity: 1,
-          width: desktop ? '40vw' : '30vw',
-          height: desktop ? '40vh' : '50vh',
         }}
         transition={{ duration: 0.4, delay: 1.2, ease: 'easeInOut' }}
       >
