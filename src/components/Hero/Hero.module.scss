@@ -24,6 +24,7 @@
   justify-content: center;
   gap: 20px;
   font-family: $font-base;
+  opacity: 0;
 
   @media (min-width: 768px) {
     width: fit-content;
