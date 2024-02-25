@@ -55,7 +55,7 @@ const Info = () => {
         Here is a pre- schedule, changes might happen so be on the look out
       </p>
       <h3 /* style={{ textDecoration: 'line-through' }} */>
-        Friday: At Danscenter{' '}
+        Friday: At Danscenter + Club in town
       </h3>
       {/*  <p style={{ color: 'tomato' }}>Done did with it</p> */}
       <p className={styles.date}>1 st of march</p>
@@ -97,7 +97,7 @@ const Info = () => {
       </ul>
 
       <h3 /* style={{ textDecoration: 'line-through' }} */>
-        Saturday: At Dancer
+        Saturday: At Dancenter + battle event
       </h3>
       {/* <p style={{ color: 'tomato' }}>Done did with it</p> */}
       <p className={styles.date}>2nd of march</p>
@@ -106,8 +106,44 @@ const Info = () => {
         <li>12.30 - 14.00 Teacher: A-Train</li>
         <li>14.00-15.00 Break</li>
         <li>15.00 - 17.00 Teacher: P-Lock</li>
-        <li>More info coming soon... about saturday</li>
       </ul>
+      <ul>
+        <li>FUNKCAMP BATTLE!!! 2nd of march</li>
+        <li>Locking & Popping 1vs1</li>
+        <li>DJ:s - Boondox, DJenius </li>
+        <li>Judges - Willow & Inxi </li>
+        <li>Host - Mr 1NE-ONE </li>
+        <li>Doors open 17.00</li>
+        {/* <li>
+          <Link
+            rel='stylesheet'
+            href='https://www.fasching.se/club-yo/#2024-03-01T23-30'
+            target='_blank'
+          >
+            Link to the event
+          </Link>
+        </li> */}
+        <div style={{ marginTop: '2rem' }}></div>
+        <Image
+          src='/battle.png'
+          alt='battle event'
+          width={360}
+          height={380}
+          priority
+        />
+        <div style={{ marginBottom: '2rem' }}></div>
+        {/*  <li>
+          <Link
+            rel='stylesheet'
+            href='https://maps.app.goo.gl/XxsBN6ZDRc9SVSSz5'
+            target='_blank'
+          >
+            Adress link to Fasching
+          </Link>
+        </li> */}
+        {/*  <div style={{ marginBottom: '2rem' }}></div> */}
+      </ul>
+
       <h3 /* style={{ textDecoration: 'line-through' }} */>
         Sunday: At danscenter
       </h3>
