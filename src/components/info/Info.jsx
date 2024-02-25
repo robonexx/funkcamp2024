@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-
+import Image from 'next/image';
 // styles
 import styles from './Info.module.scss';
 
@@ -67,6 +67,35 @@ const Info = () => {
         <li>21.00 doors close</li>
         <li>Rest for saturday</li>
       </ul>
+      <p className={styles.date}>CLUB YO! @ Fashing</p>
+      <ul>
+        <li>HIPHOP-PARTY!!!</li>
+        <li>DJ:s Cheza, Eka Scratch och DJ Willrock </li>
+        <li>Doors open 23:30 - 04.00</li>
+        <li>
+          <Link
+            rel='stylesheet'
+            href='https://www.fasching.se/club-yo/#2024-03-01T23-30'
+            target='_blank'
+          >
+            Link to the event
+          </Link>
+        </li>
+        <div style={{ marginTop: '2rem' }}></div>
+        <Image src='/yo.png' alt='club yo' width={300} height={300} priority />
+        <div style={{ marginBottom: '2rem' }}></div>
+        <li>
+          <Link
+            rel='stylesheet'
+            href='https://maps.app.goo.gl/XxsBN6ZDRc9SVSSz5'
+            target='_blank'
+          >
+            Adress link to Fasching
+          </Link>
+        </li>
+        <div style={{ marginBottom: '2rem' }}></div>
+      </ul>
+
       <h3 /* style={{ textDecoration: 'line-through' }} */>
         Saturday: At Dancer
       </h3>
