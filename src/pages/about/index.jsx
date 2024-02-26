@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import IMG from '/public/fc05.jpg';
+import IMG from '/public/fcamp05.jpg';
 
 // styles
 import styles from './About.module.scss';
@@ -14,7 +14,7 @@ const About = () => {
         animate={{ opacity: 1, x: 0, y: 40 }}
         transition={{ duration: 1.6, delay: 1 }}
       >
-        Founders of the funkcamp...
+        The year it all started... 2005
       </motion.p>
       <motion.div
         className={styles.img_wrapper}
@@ -34,14 +34,14 @@ const About = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1, delay: 1 }}
       >
-        The OG's who was there,{' '}
+        James 'OG Skeeter Rabbit' Higgins & Dave Gregory 'Campbellock Jr' Pope
       </motion.h4>
       <motion.h2
         initial={{ y: 200, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1, delay: 1 }}
       >
-        How it all began ⚡️{' '} & continues
+        How it all began ⚡️ & continues
       </motion.h2>
       <motion.p
         initial={{ opacity: 0 }}
@@ -51,8 +51,10 @@ const About = () => {
         Funkcamp 2005 ✨ First ever dance camp dedicated to locking in Sweden
         and Europe.
         <br />
-        From there the rest is history, we are now coming in to our 20th
-        anniversay in 2024.
+        From there the rest is history, we are now coming in to our 19th year in
+        2024. But actaully not 19th edition... due to some years falling off,
+        most of us know why.
+        <br />
         <br />
         Original idea to camp was from me working on a kids show for UR
         utbildnings radion in Sweden, I was the producer of that show and was
@@ -61,12 +63,25 @@ const About = () => {
         Skeeter Rabbit, Greg Campbellock Jr for me.
         <br />
         We (me and Skeeter) had a few emails sent back and forth, I asked him to
-        come and teach the foundation and history in Sweden, he said shure and
-        said he connect me with Greg.
+        come and teach the foundation and history in Sweden, he said shure I can
+        help out and said he connect me with Greg. Then Greg also became a part
+        of the process
         <br />
-        With the help of OG Skeeter Rabbit & Greg Campbellock Jr, we put the
-        ideas together and set the plans in motion for what was to become
-        FUNKCAMP (sweden)
+        <br />
+        Also during this period Skeeter and Greg planned a camp in LA, a locking
+        camp. It was moved to Vegas and the narrative was changed (Skeeter got
+        sick) and people decided to go and do it with out Skeeter who was the
+        original person behind the camp both idea & concept. I was invited ot US,
+        but could not go to the camp in Vegas, so a friend from Sweden went and
+        met with the OGs.
+        <br />
+        <br />
+        The same year we decided to do the funkcamp in Sweden. Bringing the OG's
+        so that our kids could learn directly from the source. With the help of
+        OG Skeeter Rabbit & Greg Campbellock Jr, we put the ideas together and
+        set the plans in motion for what was to become FUNKCAMP (sweden) This
+        lighted a spark amongst many younger lockers and a groups like funky 4
+        brothers was formed from this spark! And supported by many of the OG's.
         <br />
       </motion.p>
       <p>
@@ -127,9 +142,9 @@ const About = () => {
         their passion with us.
         <br />
         <br />
-        We hope to see you at the next camp in 2024 & we already started
-        planning an upcoming camp in 2025 with some great guests that never
-        visited us before. 🎉
+        We hope to see you at the 2024 camp & we already started
+        planning an upcoming camp in 2025! 20year anniversary! with some great
+        guests that never visited us before. 🎉
       </p>
     </div>
   );
