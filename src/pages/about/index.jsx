@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import IMG from '/public/fcamp05.jpg';
+import IMG from '/public/fcamp05.JPG';
 
 // styles
 import styles from './About.module.scss';
