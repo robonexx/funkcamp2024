@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import IMG from '/public/fcamp05.JPG';
+import IMG from '/public/fcamp05.png';
 
 // styles
 import styles from './About.module.scss';
@@ -71,9 +71,9 @@ const About = () => {
         Also during this period Skeeter and Greg planned a camp in LA, a locking
         camp. It was moved to Vegas and the narrative was changed (Skeeter got
         sick) and people decided to go and do it with out Skeeter who was the
-        original person behind the camp both idea & concept. I was invited ot US,
-        but could not go to the camp in Vegas, so a friend from Sweden went and
-        met with the OGs.
+        original person behind the camp both idea & concept. I was invited ot
+        US, but could not go to the camp in Vegas, so a friend from Sweden went
+        and met with the OGs.
         <br />
         <br />
         The same year we decided to do the funkcamp in Sweden. Bringing the OG's
@@ -142,9 +142,9 @@ const About = () => {
         their passion with us.
         <br />
         <br />
-        We hope to see you at the 2024 camp & we already started
-        planning an upcoming camp in 2025! 20year anniversary! with some great
-        guests that never visited us before. 🎉
+        We hope to see you at the 2024 camp & we already started planning an
+        upcoming camp in 2025! 20year anniversary! with some great guests that
+        never visited us before. 🎉
       </p>
     </div>
   );
