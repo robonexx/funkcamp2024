@@ -19,7 +19,7 @@ const Info = () => {
         <h2 className={styles.name}>
           DANSCENTER <span>Fryshuset</span>
         </h2>
-        <p>Studio 1 or 2 (info coming soon)</p>
+        <p>DANCE STUDIO 2 (bottom floor)</p>
         <h4 style={{ textAlign: 'left', marginTop: '2rem' }}>
           Adress for venue:
         </h4>
