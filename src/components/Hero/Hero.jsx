@@ -23,10 +23,9 @@ const Hero = () => {
     <motion.div className={styles.hero}>
       <motion.div
         className={styles.hero_btn_wrapper}
-        initial={{ opacity: 0, y: 300 }}
+        initial={{ opacity: 0 }}
         animate={{
           opacity: 1,
-          y: 0,
         }}
         transition={{ duration: 0.6, delay: 3, ease: 'easeInOut' }}
       >
