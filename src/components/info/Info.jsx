@@ -61,7 +61,8 @@ const Info = () => {
       {/* <p style={{ color: 'tomato' }}>Done did with it</p> */}
       <p className={styles.date}>2nd of march</p>
       <ul>
-        <li>11.00-12.30 Teacher: Lady Charlock</li>
+        <span>A lastminute change in schedule... this morning</span>
+        <li>11.00-12.30 Teacher: Rob-One & Will The Bill</li>
         <li>12.30 - 14.00 Teacher: A-Train</li>
         <li>14.00-15.00 Break</li>
         <li>15.00 - 17.00 Teacher: P-Lock</li>
