@@ -51,23 +51,48 @@ const Info = () => {
         <br />
       </div>
       <br />
-      <p className={styles.schedulestart}>
+     {/*  <p className={styles.schedulestart}>
         Here is a pre- schedule, changes might happen so be on the look out
-      </p>
+      </p> */}
 
       <h3 /* style={{ textDecoration: 'line-through' }} */>
+        Sunday: At danscenter
+      </h3>
+      {/*  <p style={{ color: 'tomato' }}>Done did with it</p> */}
+      <p className={styles.date}>3rd of march</p>
+      <ul>
+        <li>11.00 - 12.30 Teacher: Willow</li>
+        <li>12.30 - 14.00 Teacher: Funky Asparagus</li>
+        <li>14.00-15.00 Break</li>
+        <li>15.15-17.15 Teacher: P-Lock</li>
+        <li>THE END</li>
+      </ul>
+
+      <h3 style={{ textDecoration: 'line-through' }}>
+        Friday: At Danscenter
+      </h3>
+       <p style={{ color: 'tomato' }}>Done did with it</p>
+      <p className={styles.date} style={{ textDecoration: 'line-through' }}>1 st of march</p>
+      <ul style={{ textDecoration: 'line-through' }}>
+        <li>17.30 Welcome and registration - Danscenter</li>
+        <li>18.00-19.25 Teacher: Willow</li>
+        <li>19.30-20.55 Teacher: Funky Asparagus</li>
+        <li>21.00 doors close</li>
+        <li>Rest for saturday</li>
+      </ul>
+
+      <h3 style={{ textDecoration: 'line-through' }}>
         Saturday: At Dancenter + battle event
       </h3>
-      {/* <p style={{ color: 'tomato' }}>Done did with it</p> */}
-      <p className={styles.date}>2nd of march</p>
-      <ul>
-        <span>A lastminute change in schedule... this morning</span>
+      <p style={{ color: 'tomato' }}>Done did with it</p>
+      <p className={styles.date} style={{ textDecoration: 'line-through' }}>2nd of march</p>
+      <ul style={{ textDecoration: 'line-through' }}>
         <li>11.00-12.30 Teacher: Rob-One & Will The Bill</li>
         <li>12.30 - 14.00 Teacher: A-Train</li>
         <li>14.00-15.00 Break</li>
         <li>15.00 - 17.00 Teacher: P-Lock</li>
       </ul>
-      <ul>
+      <ul style={{ textDecoration: 'line-through' }}>
         <li>FUNKCAMP BATTLE!!! 2nd of march (Studio 1)</li>
         <li>Locking & Popping 1vs1</li>
         <li>DJ:s - Boondox, DJenius </li>
@@ -83,15 +108,6 @@ const Info = () => {
             Link to the event
           </Link>
         </li> */}
-        <div style={{ marginTop: '2rem' }}></div>
-        <Image
-          src='/battle.png'
-          alt='battle event'
-          width={360}
-          height={380}
-          priority
-        />
-        <div style={{ marginBottom: '2rem' }}></div>
         {/*  <li>
           <Link
             rel='stylesheet'
@@ -102,32 +118,6 @@ const Info = () => {
           </Link>
         </li> */}
         {/*  <div style={{ marginBottom: '2rem' }}></div> */}
-      </ul>
-
-      <h3 /* style={{ textDecoration: 'line-through' }} */>
-        Sunday: At danscenter
-      </h3>
-      {/*  <p style={{ color: 'tomato' }}>Done did with it</p> */}
-      <p className={styles.date}>3rd of march</p>
-      <ul>
-        <li>11.00 - 12.30 Teacher: Willow</li>
-        <li>12.30 - 14.00 Teacher: Funky Asparagus</li>
-        <li>14.00-15.00 Break</li>
-        <li>15.00-17.00 Teacher: P-Lock</li>
-        <li>THE END</li>
-      </ul>
-
-      <h3 style={{ textDecoration: 'line-through' }}>
-        Friday: At Danscenter
-      </h3>
-       <p style={{ color: 'tomato' }}>Done did with it</p>
-      <p className={styles.date} style={{ textDecoration: 'line-through' }}>1 st of march</p>
-      <ul style={{ textDecoration: 'line-through' }}>
-        <li>17.30 Welcome and registration - Danscenter</li>
-        <li>18.00-19.25 Teacher: Willow</li>
-        <li>19.30-20.55 Teacher: Funky Asparagus</li>
-        <li>21.00 doors close</li>
-        <li>Rest for saturday</li>
       </ul>
     </div>
   );
